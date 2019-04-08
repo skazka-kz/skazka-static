@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Footer from "./footer";
 
+const SiteWrapper = styled.div``;
+
 const Layout = ({ children }) => {
   return (
-    <div>
+    <SiteWrapper>
       <Header />
       {children}
       <Footer />
-    </div>
+    </SiteWrapper>
   );
 };
 
