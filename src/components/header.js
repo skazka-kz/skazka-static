@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { black, orange_dark, orange_light } from "../utilities/colors";
 
-import CookieGraphic from "../images/top_right_graphic_small.svg";
+import CookieGraphic from "../images/top_right.svg";
 
 const Wrap = styled.div`
   color: ${black};
@@ -58,8 +58,8 @@ const LinksContainer = styled.ul`
   }
 `;
 const InfoWrapper = styled.div`
-  width: 50%;
-  margin: 15% 2rem;
+  width: 45%;
+  margin: 12% 2rem;
 `;
 const Info = styled.p`
   font-family: "Ubuntu", sans-serif;
