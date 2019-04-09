@@ -6,12 +6,34 @@ import SEO from "../components/seo";
 
 import logos from "../images/logos";
 import { black, orange_light } from "../utilities/colors";
+import leftGraphic from "../images/left.svg";
+import rightGraphic from "../images/right.svg";
 
 const ContentWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20% 2rem;
+  margin: 20% 0;
+  position: relative;
+  padding: 0 2rem;
+`;
+
+const FixedImage = styled.img`
+  position: absolute;
+  z-index: -10;
+`;
+
+const LeftGraphic = styled(FixedImage)`
+  position: absolute;
+  left: 0;
+  top: -30%;
+  width: 20%;
+`;
+const RightGraphic = styled(FixedImage)`
+  position: absolute;
+  right: 0;
+  width: 20%;
+  top: -30%;
 `;
 
 const SectionTitle = styled.h1`
@@ -133,6 +155,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <ContentWrapper>
+      <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
       <SectionTitle>Наши Партнёры:</SectionTitle>
       <CardsContainer>
         {logos.map(p => (
@@ -143,6 +166,7 @@ const IndexPage = () => (
       </CardsContainer>
     </ContentWrapper>
     <ContentWrapper>
+      <RightGraphic src={rightGraphic} alt="Decorative graphic" />
       <SectionTitle>Контакты:</SectionTitle>
       <ContactsContainer>
         <ContactCard>
