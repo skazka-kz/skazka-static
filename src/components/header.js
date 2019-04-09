@@ -18,6 +18,7 @@ const TopSectionWrap = styled.div`
 
 const Brand = styled.h1`
   font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   font-size: 5rem;
 `;
 const LargeGraphic = styled.img`

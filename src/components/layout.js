@@ -8,11 +8,22 @@ import rightGraphic from "../images/right.svg";
 
 const SiteWrapper = styled.div``;
 
-const LeftGraphic = styled.img`
+const FixedImage = styled.img`
   position: absolute;
+  z-index: -10;
 `;
-const RightGraphic = styled.img`
+
+const LeftGraphic = styled(FixedImage)`
   position: absolute;
+  left: 0;
+  top: 80%;
+  width: 20%;
+`;
+const RightGraphic = styled(FixedImage)`
+  position: absolute;
+  right: 0;
+  width: 20%;
+  top: 180%;
 `;
 
 const Layout = ({ children }) => {
