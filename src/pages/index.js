@@ -16,6 +16,7 @@ const ContentWrapper = styled.section`
   margin: 20% 0;
   position: relative;
   padding: 0 2rem;
+  color: ${black};
 `;
 
 const FixedImage = styled.img`
@@ -40,10 +41,14 @@ const SectionTitle = styled.h1`
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 3.3rem;
   line-height: 1.2;
   color: ${black};
   margin-bottom: 6rem;
+
+  @media (max-width: 1440px) {
+    font-size: 2.8rem;
+  }
 
   &:after {
     content: "";
@@ -75,20 +80,27 @@ const PartnerCard = styled.div`
   border-radius: 3rem;
 
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  height: 25rem;
-  padding: 1rem;
+  height: 33rem;
+  padding: 2rem;
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 1440px) {
+    height: 22rem;
   }
 `;
 
 const ContactsContainer = styled.div`
   display: flex;
-  max-width: 900px;
+  max-width: 1100px;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  @media (max-width: 1440px) {
+    max-width: 900px;
+  }
 `;
 
 const ContactCard = styled.div`
@@ -101,16 +113,24 @@ const ContactCard = styled.div`
   padding: 1rem 4rem;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  height: 20rem;
+  height: 30rem;
   justify-content: space-between;
   padding-bottom: 5rem;
+
+  @media (max-width: 1440px) {
+    height: 25rem;
+  }
 `;
 
 const Name = styled.span`
   position: relative;
-  padding: 0.25rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+
+  @media (max-width: 1440px) {
+    font-size: 2.3rem;
+  }
 
   &:after {
     content: "";
@@ -125,25 +145,38 @@ const Name = styled.span`
   }
 `;
 const Code = styled.span`
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-style: italic;
   font-weight: 300;
+  margin: 0.3rem;
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
 `;
 const Phone = styled.span`
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 300;
   margin: 0.3rem;
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Address = styled.address`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  @media (max-width: 1440px) {
+    font-size: 2.2rem;
+  }
 `;
 const MapLink = styled.a`
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: ${orange_light};
   font-weight: 300;
   text-decoration: none;
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const PhoneContainer = styled.div`

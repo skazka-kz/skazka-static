@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-import { black, orange_dark, orange_light } from "../utilities/colors";
+import { black, orange_light } from "../utilities/colors";
 
 import CookieGraphic from "../images/top_right.svg";
 
@@ -19,7 +19,11 @@ const TopSectionWrap = styled.div`
 const Brand = styled.h1`
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 7rem;
+
+  @media (max-width: 1440px) {
+    font-size: 5rem;
+  }
 `;
 const LargeGraphic = styled.img`
   position: absolute;
@@ -29,7 +33,7 @@ const LargeGraphic = styled.img`
   z-index: -5;
 `;
 const LinksContainer = styled.ul`
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -41,7 +45,11 @@ const LinksContainer = styled.ul`
     margin: 0.5rem 1rem;
     color: ${black};
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+
+    @media (max-width: 1440px) {
+      font-size: 1.8rem;
+    }
   }
 
   /* The underline thing */
@@ -65,7 +73,7 @@ const InfoWrapper = styled.div`
 const Info = styled.p`
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   color: ${black};
   margin: 0.5rem;
@@ -73,6 +81,10 @@ const Info = styled.p`
   padding: 0.5rem;
   padding-left: 1.5rem;
   border-left: 2px solid ${orange_light};
+
+  @media (max-width: 1440px) {
+    font-size: 2.2rem;
+  }
 `;
 const InfoButton = styled.button`
   margin: 2rem 4rem;
@@ -85,8 +97,12 @@ const InfoButton = styled.button`
     rgba(246, 146, 30, 1)
   );
   font-family: "Ubuntu", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
+
+  @media (max-width: 1440px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Header = () => (
