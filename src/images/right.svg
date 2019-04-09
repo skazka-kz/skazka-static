@@ -1,0 +1,17 @@
+<svg data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1246 1379.89">
+  <defs>
+    <linearGradient id="a" x1=".18" y1="439.03" x2="533" y2="439.03" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#faaf3b" stop-opacity=".4"/>
+      <stop offset=".06" stop-color="#faaf3b" stop-opacity=".48"/>
+      <stop offset=".2" stop-color="#faaf3b" stop-opacity=".64"/>
+      <stop offset=".35" stop-color="#faaf3b" stop-opacity=".77"/>
+      <stop offset=".5" stop-color="#faaf3b" stop-opacity=".87"/>
+      <stop offset=".65" stop-color="#faaf3b" stop-opacity=".94"/>
+      <stop offset=".81" stop-color="#faaf3b" stop-opacity=".99"/>
+      <stop offset="1" stop-color="#faaf3b"/>
+    </linearGradient>
+  </defs>
+  <path fill="none" d="M0 13.42h843.1v1366.47H0z"/>
+  <path fill="none" d="M402.9 0H1246v1366.47H402.9z"/>
+  <path d="M533 0C245.86 11.69.18 220.49.18 375.39.18 534.81 358.45 569 495.33 849.64c9.81 20.11 22.71 28.81 37.67 28.47z" transform="translate(486.87 162.4)" fill="url(#a)"/>
+</svg>

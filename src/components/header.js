@@ -35,7 +35,7 @@ const LinksContainer = styled.ul`
 
   a {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     margin: 0.5rem 1rem;
     color: ${black};
@@ -62,7 +62,7 @@ const InfoWrapper = styled.div`
   margin: 15% 2rem;
 `;
 const Info = styled.p`
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 1.2;

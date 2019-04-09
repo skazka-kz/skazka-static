@@ -1,0 +1,18 @@
+<svg data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2503 1544.75">
+  <defs>
+    <linearGradient id="a" x1="763.8" y1="791.21" x2="790.36" y2="-7.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#faaf3b" stop-opacity=".4"/>
+      <stop offset=".06" stop-color="#faaf3b" stop-opacity=".48"/>
+      <stop offset=".2" stop-color="#faaf3b" stop-opacity=".64"/>
+      <stop offset=".35" stop-color="#faaf3b" stop-opacity=".77"/>
+      <stop offset=".5" stop-color="#faaf3b" stop-opacity=".87"/>
+      <stop offset=".65" stop-color="#faaf3b" stop-opacity=".94"/>
+      <stop offset=".81" stop-color="#faaf3b" stop-opacity=".99"/>
+      <stop offset="1" stop-color="#faaf3b"/>
+    </linearGradient>
+  </defs>
+  <path fill="none" d="M543.13 178.29h843.1v1366.47h-843.1z"/>
+  <path fill="none" d="M946.04 164.87h843.1v1366.47h-843.1z"/>
+  <path fill="none" d="M583.15 0H2503v1366.47H583.15z"/>
+  <path d="M1260.52 583.5c73.53-29.39 149.92-54.08 214.88-101.5C1751 280.83 1297 130.94 1142.26 91.12c-313-80.57-694.12-153.94-997.41-6.62C94.49 109 40.53 139.87 0 181.58v401.48l.2.44z" transform="translate(0 474.77)" fill="url(#a)"/>
+</svg>
