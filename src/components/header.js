@@ -41,7 +41,7 @@ const LinksContainer = styled.ul`
     margin: 0.5rem 1rem;
     color: ${black};
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   /* The underline thing */

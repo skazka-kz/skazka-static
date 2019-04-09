@@ -23,7 +23,7 @@ const RightGraphic = styled(FixedImage)`
   position: absolute;
   right: 0;
   width: 20%;
-  top: 180%;
+  top: 200%;
 `;
 
 const Layout = ({ children }) => {
