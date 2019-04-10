@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-import { black, orange_light } from "../utilities/colors";
+import { black, orange_light, orangeGradient } from "../utilities/colors";
 
 import CookieGraphic from "../images/top_right.svg";
 
-const Wrap = styled.div`
+const Wrap = styled.header`
   color: ${black};
 
   @media (max-width: 850px) {
@@ -179,11 +179,7 @@ const InfoButton = styled.a`
   padding: 1rem 4rem;
   border-radius: 3rem;
   border: none;
-  background: linear-gradient(
-    75deg,
-    rgba(250, 175, 59, 1),
-    rgba(246, 146, 30, 1)
-  );
+  background: ${orangeGradient};
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
   color: white;

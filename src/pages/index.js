@@ -3,26 +3,12 @@ import styled from "styled-components";
 
 import HomeLayout from "../components/homeLayout";
 import SEO from "../components/seo";
+import { ContentWrapper, SectionHeading } from "../styled";
 
 import logos from "../images/logos";
 import { black, orange_light } from "../utilities/colors";
 import leftGraphic from "../images/left.svg";
 import rightGraphic from "../images/right.svg";
-
-const ContentWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10rem 0;
-  position: relative;
-  padding: 0 2rem;
-  color: ${black};
-
-  @media (max-width: 1024px) {
-    margin: 5% 0;
-    padding: 0;
-  }
-`;
 
 const FixedImage = styled.img`
   position: absolute;
@@ -47,6 +33,7 @@ const LeftGraphic = styled(FixedImage)`
     top: 5%;
   }
 `;
+
 const RightGraphic = styled(FixedImage)`
   position: absolute;
   right: 0;
@@ -59,42 +46,6 @@ const RightGraphic = styled(FixedImage)`
 
   @media (max-width: 768px) {
     width: 40%;
-  }
-`;
-
-const SectionTitle = styled.h1`
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 3.3rem;
-  line-height: 1.2;
-  color: ${black};
-  margin-bottom: 6rem;
-
-  @media (max-width: 1440px) {
-    font-size: 2.8rem;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 2.2rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
-
-  &:after {
-    content: "";
-
-    width: 70%;
-    position: absolute;
-    left: 15%;
-    bottom: -0.75rem;
-
-    border-width: 0 0 2px;
-    border-style: solid;
-    border-color: ${orange_light};
   }
 `;
 
@@ -305,7 +256,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <ContentWrapper>
       <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
-      <SectionTitle>Наши Партнёры:</SectionTitle>
+      <SectionHeading>Наши Партнёры:</SectionHeading>
       <CardsContainer>
         {logos.map(p => (
           <PartnerCard key={p.alt}>
@@ -317,7 +268,7 @@ const IndexPage = () => (
     </ContentWrapper>
     <ContentWrapper>
       <RightGraphic src={rightGraphic} alt="Decorative graphic" />
-      <SectionTitle>Контакты:</SectionTitle>
+      <SectionHeading>Контакты:</SectionHeading>
       <ContactsContainer id="contacts">
         <ContactCard>
           <Name>Кокшетау</Name>

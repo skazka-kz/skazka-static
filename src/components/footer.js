@@ -3,6 +3,7 @@ import styled from "styled-components";
 import React from "react";
 
 import bottomGraphic from "../images/bot.svg";
+import { orangeGradient } from "../utilities/colors";
 
 const Wrapper = styled.footer`
   position: relative;
@@ -33,16 +34,12 @@ const Wrapper = styled.footer`
 
   @media (max-width: 599px) {
     height: auto;
-    background: linear-gradient(
-      75deg,
-      rgba(250, 175, 59, 1),
-      rgba(246, 146, 30, 1)
-    );
+    background: ${orangeGradient};
     padding: 2rem 0;
   }
 `;
 
-const Header = styled.h1`
+const Heading = styled.h1`
   align-self: flex-start;
   font-size: 6rem;
   font-weight: 700;
@@ -117,7 +114,7 @@ const LinksContainer = styled.ul`
 
 const Footer = () => (
   <Wrapper>
-    <Header>Сказка</Header>
+    <Heading>Сказка</Heading>
     <LinksContainer>
       <Link to="/">Главная</Link>
       <Link to="/blog">Новости</Link>
