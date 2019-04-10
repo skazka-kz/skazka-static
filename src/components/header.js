@@ -25,6 +25,12 @@ const TopSectionWrap = styled.div`
   @media (max-width: 768px) {
     width: 95%;
   }
+
+  @media (max-width: 599px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Brand = styled.h1`
@@ -42,6 +48,10 @@ const Brand = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 599px) {
+    font-size: 5rem;
   }
 `;
 const LargeGraphic = styled.img`
@@ -69,6 +79,9 @@ const LinksContainer = styled.ul`
     margin-top: 0.5rem;
   }
 
+  @media (max-width: 599px) {
+  }
+
   a {
     position: relative;
     font-family: "Ubuntu", sans-serif;
@@ -88,6 +101,12 @@ const LinksContainer = styled.ul`
 
     @media (max-width: 768px) {
       font-size: 1.1rem;
+    }
+
+    @media (max-width: 599px) {
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 0.1rem;
     }
   }
 
@@ -115,6 +134,10 @@ const InfoWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: 599px) {
+    width: 100%;
+  }
 `;
 const Info = styled.p`
   font-family: "Ubuntu", sans-serif;
@@ -138,6 +161,13 @@ const Info = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 599px) {
+    padding: 2rem;
+    margin: 0;
+    border: none;
+    text-align: center;
   }
 `;
 const InfoButton = styled.button`
@@ -164,6 +194,10 @@ const InfoButton = styled.button`
 
   @media (max-width: 768px) {
     font-size: 1.3rem;
+  }
+
+  @media (max-width: 599px) {
+    padding: 1rem 3rem;
   }
 `;
 
