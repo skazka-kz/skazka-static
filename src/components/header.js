@@ -8,12 +8,23 @@ import CookieGraphic from "../images/top_right.svg";
 
 const Wrap = styled.div`
   color: ${black};
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const TopSectionWrap = styled.div`
   display: flex;
   width: 70%;
   align-items: center;
   margin: 1rem 2rem;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 const Brand = styled.h1`
@@ -24,6 +35,14 @@ const Brand = styled.h1`
   @media (max-width: 1440px) {
     font-size: 5rem;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 const LargeGraphic = styled.img`
   position: absolute;
@@ -31,12 +50,24 @@ const LargeGraphic = styled.img`
   right: 0;
   width: 55%;
   z-index: -5;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const LinksContainer = styled.ul`
   margin-top: 2rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0.5rem;
+  }
 
   a {
     position: relative;
@@ -49,6 +80,14 @@ const LinksContainer = styled.ul`
 
     @media (max-width: 1440px) {
       font-size: 1.8rem;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
     }
   }
 
@@ -69,6 +108,13 @@ const LinksContainer = styled.ul`
 const InfoWrapper = styled.div`
   width: 45%;
   margin: 12% 2rem;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Info = styled.p`
   font-family: "Ubuntu", sans-serif;
@@ -84,6 +130,14 @@ const Info = styled.p`
 
   @media (max-width: 1440px) {
     font-size: 2.2rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
   }
 `;
 const InfoButton = styled.button`
@@ -102,6 +156,14 @@ const InfoButton = styled.button`
 
   @media (max-width: 1440px) {
     font-size: 2.2rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
   }
 `;
 
