@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Layout from "../components/layout";
+import HomeLayout from "../components/homeLayout";
 import SEO from "../components/seo";
 
 import logos from "../images/logos";
@@ -13,7 +13,7 @@ const ContentWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20% 0;
+  margin: 10rem 0;
   position: relative;
   padding: 0 2rem;
   color: ${black};
@@ -300,14 +300,14 @@ const Notice = styled.p`
 `;
 
 const IndexPage = () => (
-  <Layout>
+  <HomeLayout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <ContentWrapper>
       <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
       <SectionTitle>Наши Партнёры:</SectionTitle>
       <CardsContainer>
         {logos.map(p => (
-          <PartnerCard>
+          <PartnerCard key={p.alt}>
             <img src={p.src} alt={p.alt} />
           </PartnerCard>
         ))}
@@ -317,7 +317,7 @@ const IndexPage = () => (
     <ContentWrapper>
       <RightGraphic src={rightGraphic} alt="Decorative graphic" />
       <SectionTitle>Контакты:</SectionTitle>
-      <ContactsContainer>
+      <ContactsContainer id="contacts">
         <ContactCard>
           <Name>Кокшетау</Name>
           <PhoneContainer>
@@ -327,7 +327,10 @@ const IndexPage = () => (
           </PhoneContainer>
 
           <Address>Ауэзова, 191 а/3</Address>
-          <MapLink href="https://2gis.kz/kokshetau/geo/70030076161419529%2C69.393704%2C53.290187?queryState=center%2F69.393701%2C53.290189%2Fzoom%2F18">
+          <MapLink
+            target="_blank"
+            href="https://2gis.kz/kokshetau/geo/70030076161419529%2C69.393704%2C53.290187?queryState=center%2F69.393701%2C53.290189%2Fzoom%2F18"
+          >
             Где это?
           </MapLink>
         </ContactCard>
@@ -339,11 +342,13 @@ const IndexPage = () => (
           </PhoneContainer>
 
           <Address>Карбышева, 117</Address>
-          <MapLink href="https://yandex.kz/maps/-/CCBgVL7J">Где это?</MapLink>
+          <MapLink target="_blank" href="https://yandex.kz/maps/-/CCBgVL7J">
+            Где это?
+          </MapLink>
         </ContactCard>
       </ContactsContainer>
     </ContentWrapper>
-  </Layout>
+  </HomeLayout>
 );
 
 export default IndexPage;

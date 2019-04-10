@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
@@ -33,10 +34,12 @@ const TopSectionWrap = styled.div`
   }
 `;
 
-const Brand = styled.h1`
+const Brand = styled(Link)`
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 7rem;
+  text-decoration: none;
+  color: ${black};
 
   @media (max-width: 1440px) {
     font-size: 5rem;
@@ -164,13 +167,14 @@ const Info = styled.p`
   }
 
   @media (max-width: 599px) {
-    padding: 2rem;
+    padding: 2rem 1rem;
     margin: 0;
     border: none;
     text-align: center;
   }
 `;
-const InfoButton = styled.button`
+const InfoButton = styled.a`
+  display: inline-block;
   margin: 2rem 4rem;
   padding: 1rem 4rem;
   border-radius: 3rem;
@@ -183,6 +187,7 @@ const InfoButton = styled.button`
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
   color: white;
+  text-decoration: none;
 
   @media (max-width: 1440px) {
     font-size: 2.2rem;
@@ -194,6 +199,7 @@ const InfoButton = styled.button`
 
   @media (max-width: 768px) {
     font-size: 1.3rem;
+    margin: 2rem;
   }
 
   @media (max-width: 599px) {
@@ -201,28 +207,48 @@ const InfoButton = styled.button`
   }
 `;
 
-const Header = () => (
+const Header = ({ isHome }) => (
   <Wrap>
-    <TopSectionWrap>
-      <Brand>Сказка</Brand>
+    <TopSectionWrap id="about">
+      <Brand to="/">Сказка</Brand>
       <LinksContainer>
-        <Link to="#about" className="active">
-          О Нас
-        </Link>
-        <Link to="#contacts">Где Мы</Link>
-        <Link to="/blog">Новости</Link>
-        <Link to="/products">Продукция</Link>
+        {isHome ? (
+          <>
+            <a href="#about" className="active">
+              О Нас
+            </a>
+            <a href="#contacts">Где Мы</a>
+            <Link to="/blog">Новости</Link>
+            <Link to="/products">Продукция</Link>
+          </>
+        ) : (
+          <>
+            <Link to="/">Главная</Link>
+            <Link to="/blog">Новости</Link>
+            <Link to="/products">Продукция</Link>
+          </>
+        )}
       </LinksContainer>
-      <LargeGraphic src={CookieGraphic} />
+      {isHome && <LargeGraphic src={CookieGraphic} />}
     </TopSectionWrap>
-    <InfoWrapper>
-      <Info>
-        Компания Сказка занимается дистрибуцией кондитерской продукции на
-        территории Акмолинской и Северо-Казахстанской области
-      </Info>
-      <InfoButton>Где Мы</InfoButton>
-    </InfoWrapper>
+    {isHome && (
+      <InfoWrapper>
+        <Info>
+          Компания Сказка занимается дистрибуцией кондитерской продукции на
+          территории Акмолинской и Северо-Казахстанской области
+        </Info>
+        <InfoButton href="#contacts">Где Мы</InfoButton>
+      </InfoWrapper>
+    )}
   </Wrap>
 );
+
+Header.propTypes = {
+  isHome: PropTypes.bool,
+};
+
+Header.defaultProps = {
+  isHome: false,
+};
 
 export default Header;

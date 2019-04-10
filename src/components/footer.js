@@ -10,7 +10,7 @@ const Wrapper = styled.footer`
   background-image: url(${bottomGraphic});
   background-size: cover;
   background-repeat: no-repeat;
-  width: 70vw;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +29,16 @@ const Wrapper = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 599px) {
+    height: auto;
+    background: linear-gradient(
+      75deg,
+      rgba(250, 175, 59, 1),
+      rgba(246, 146, 30, 1)
+    );
+    padding: 2rem 0;
   }
 `;
 
@@ -60,6 +70,11 @@ const LinksContainer = styled.ul`
     padding: 1rem;
   }
 
+  @media (max-width: 599px) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
   a {
     color: white;
     font-size: 1.8rem;
@@ -69,6 +84,11 @@ const LinksContainer = styled.ul`
 
     @media (max-width: 1024px) {
       font-size: 1.3rem;
+    }
+
+    @media (max-width: 599px) {
+      font-size: 0.9rem;
+      margin: 0rem;
     }
   }
 
@@ -99,10 +119,7 @@ const Footer = () => (
   <Wrapper>
     <Header>Сказка</Header>
     <LinksContainer>
-      <Link to="#about" className="active">
-        О Нас
-      </Link>
-      <Link to="#contacts">Где Мы</Link>
+      <Link to="/">Главная</Link>
       <Link to="/blog">Новости</Link>
       <Link to="/products">Продукция</Link>
     </LinksContainer>
