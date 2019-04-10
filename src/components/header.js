@@ -10,7 +10,7 @@ import CookieGraphic from "../images/top_right.svg";
 const Wrap = styled.div`
   color: ${black};
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@ const TopSectionWrap = styled.div`
   align-items: center;
   margin: 1rem 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     width: 95%;
   }
 
@@ -45,11 +45,11 @@ const Brand = styled(Link)`
     font-size: 5rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     font-size: 4rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     font-size: 3rem;
   }
 
@@ -64,7 +64,7 @@ const LargeGraphic = styled.img`
   width: 55%;
   z-index: -5;
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     display: none;
   }
 `;
@@ -74,11 +74,11 @@ const LinksContainer = styled.ul`
   width: 100%;
   justify-content: space-around;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     margin-top: 1rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     margin-top: 0.5rem;
   }
 
@@ -98,11 +98,11 @@ const LinksContainer = styled.ul`
       font-size: 1.8rem;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       font-size: 1.3rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
       font-size: 1.1rem;
     }
 
@@ -131,7 +131,7 @@ const InfoWrapper = styled.div`
   width: 45%;
   margin: 12% 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@ const Info = styled.p`
     font-size: 1.6rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     font-size: 1.4rem;
   }
 
@@ -197,7 +197,7 @@ const InfoButton = styled.a`
     font-size: 1.8rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     font-size: 1.3rem;
     margin: 2rem;
   }

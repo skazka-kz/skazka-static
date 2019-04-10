@@ -5,6 +5,7 @@ import Footer from "./footer";
 
 const SiteWrapper = styled.div`
   font-family: "Ubuntu", sans-serif;
+  font-display: auto;
 `;
 
 const InnerContent = styled.div`

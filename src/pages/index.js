@@ -283,6 +283,7 @@ const Notice = styled.p`
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 2.9rem;
+  font-style: italic;
   color: ${black};
 
   @media (max-width: 1440px) {
