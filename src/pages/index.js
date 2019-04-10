@@ -42,6 +42,10 @@ const LeftGraphic = styled(FixedImage)`
   @media (max-width: 768px) {
     width: 30%;
   }
+
+  @media (max-width: 599px) {
+    top: 5%;
+  }
 `;
 const RightGraphic = styled(FixedImage)`
   position: absolute;
@@ -102,6 +106,10 @@ const CardsContainer = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: 599px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const PartnerCard = styled.div`
@@ -123,6 +131,12 @@ const PartnerCard = styled.div`
     @media (max-width: 768px) {
       width: 90%;
     }
+
+    @media (max-width: 599px) {
+      max-height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
   }
 
   @media (max-width: 1440px) {
@@ -137,6 +151,11 @@ const PartnerCard = styled.div`
     padding: 3rem;
     margin: 1.5rem;
   }
+
+  @media (max-width: 599px) {
+    padding: 1rem;
+    margin: 1rem;
+  }
 `;
 
 const ContactsContainer = styled.div`
@@ -150,6 +169,9 @@ const ContactsContainer = styled.div`
   }
   @media (max-width: 768px) {
     width: 90%;
+  }
+  @media (max-width: 599px) {
+    flex-direction: column;
   }
 `;
 
@@ -256,6 +278,27 @@ const PhoneContainer = styled.div`
   flex-direction: column;
 `;
 
+const Notice = styled.p`
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 2.9rem;
+  color: ${black};
+
+  @media (max-width: 1440px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+`;
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -269,6 +312,7 @@ const IndexPage = () => (
           </PartnerCard>
         ))}
       </CardsContainer>
+      <Notice>И многие другие...</Notice>
     </ContentWrapper>
     <ContentWrapper>
       <RightGraphic src={rightGraphic} alt="Decorative graphic" />
