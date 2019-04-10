@@ -19,12 +19,11 @@ const Wrapper = styled.footer`
   justify-content: space-evenly;
 
   @media (max-width: 1024px) {
-    height: 25vh;
+    height: 20rem;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 25vh;
 
     display: flex;
     flex-direction: column;
