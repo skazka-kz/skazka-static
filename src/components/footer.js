@@ -6,7 +6,7 @@ import bottomGraphic from "../images/bot.svg";
 
 const Wrapper = styled.footer`
   position: relative;
-  height: 40vh;
+  height: 25rem;
   background-image: url(${bottomGraphic});
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,6 +17,20 @@ const Wrapper = styled.footer`
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
   justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    height: 25vh;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Header = styled.h1`
@@ -25,6 +39,16 @@ const Header = styled.h1`
   font-weight: 700;
   color: white;
   margin-left: 10vw;
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin: 0;
+    align-self: center;
+  }
 `;
 const LinksContainer = styled.ul`
   width: 70%;
@@ -33,12 +57,20 @@ const LinksContainer = styled.ul`
   justify-content: space-evenly;
   padding: 1rem 10rem;
 
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
   a {
     color: white;
     font-size: 1.8rem;
     text-decoration: none;
     font-weight: 300;
     position: relative;
+
+    @media (max-width: 1024px) {
+      font-size: 1.3rem;
+    }
   }
 
   a:after {

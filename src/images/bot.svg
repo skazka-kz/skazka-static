@@ -8,11 +8,11 @@
 	</style>
 	<title>bot</title>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="339.4981" x2="1506.3206" y2="339.4981">
-		<stop offset="0" style="stop-color:#FAAF3B;stop-opacity:0.6"/>
-		<stop offset="6.000000e-02" style="stop-color:#FAAF3B;stop-opacity:0.68"/>
-		<stop offset="0.2" style="stop-color:#FAAF3B;stop-opacity:0.74"/>
+		<stop offset="0" style="stop-color:#FAAF3B;stop-opacity:0.8"/>
+		<stop offset="6.000000e-02" style="stop-color:#FAAF3B;stop-opacity:0.8"/>
+		<stop offset="0.2" style="stop-color:#FAAF3B;stop-opacity:0.84"/>
 		<stop offset="0.35" style="stop-color:#FAAF3B;stop-opacity:0.87"/>
-		<stop offset="0.5" style="stop-color:#FAAF3B;stop-opacity:0.97"/>
+		<stop offset="0.5" style="stop-color:#FAAF3B;stop-opacity:0.90"/>
 		<stop offset="0.65" style="stop-color:#FAAF3B;stop-opacity:0.94"/>
 		<stop offset="0.81" style="stop-color:#FAAF3B;stop-opacity:0.99"/>
 		<stop offset="1" style="stop-color:#FAAF3B"/>
