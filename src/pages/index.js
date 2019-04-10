@@ -17,6 +17,11 @@ const ContentWrapper = styled.section`
   position: relative;
   padding: 0 2rem;
   color: ${black};
+
+  @media (max-width: 1024px) {
+    margin: 5% 0;
+    padding: 0;
+  }
 `;
 
 const FixedImage = styled.img`
@@ -29,12 +34,28 @@ const LeftGraphic = styled(FixedImage)`
   left: 0;
   top: -30%;
   width: 20%;
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
+  }
 `;
 const RightGraphic = styled(FixedImage)`
   position: absolute;
   right: 0;
   width: 20%;
   top: -30%;
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 const SectionTitle = styled.h1`
@@ -48,6 +69,15 @@ const SectionTitle = styled.h1`
 
   @media (max-width: 1440px) {
     font-size: 2.8rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   &:after {
@@ -68,6 +98,10 @@ const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const PartnerCard = styled.div`
@@ -85,10 +119,23 @@ const PartnerCard = styled.div`
 
   img {
     width: 100%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   @media (max-width: 1440px) {
     height: 22rem;
+  }
+
+  @media (max-width: 1024px) {
+    height: 14rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+    margin: 1.5rem;
   }
 `;
 
@@ -100,6 +147,9 @@ const ContactsContainer = styled.div`
   width: 100%;
   @media (max-width: 1440px) {
     max-width: 900px;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `;
 
@@ -120,6 +170,11 @@ const ContactCard = styled.div`
   @media (max-width: 1440px) {
     height: 25rem;
   }
+
+  @media (max-width: 1024px) {
+    padding: 2rem 1rem;
+    height: 18rem;
+  }
 `;
 
 const Name = styled.span`
@@ -130,6 +185,10 @@ const Name = styled.span`
 
   @media (max-width: 1440px) {
     font-size: 2.3rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
   }
 
   &:after {
@@ -152,6 +211,10 @@ const Code = styled.span`
   @media (max-width: 1440px) {
     font-size: 1.8rem;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
 `;
 const Phone = styled.span`
   font-size: 2.2rem;
@@ -159,6 +222,9 @@ const Phone = styled.span`
   margin: 0.3rem;
   @media (max-width: 1440px) {
     font-size: 1.8rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
   }
 `;
 
@@ -168,6 +234,9 @@ const Address = styled.address`
   @media (max-width: 1440px) {
     font-size: 2.2rem;
   }
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
 `;
 const MapLink = styled.a`
   font-size: 2.2rem;
@@ -176,6 +245,9 @@ const MapLink = styled.a`
   text-decoration: none;
   @media (max-width: 1440px) {
     font-size: 1.8rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
   }
 `;
 
