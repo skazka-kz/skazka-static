@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import React from "react";
 
-import bottomGraphic from "../images/bot.svg";
 import { orangeGradient } from "../utilities/colors";
 
 const Wrapper = styled.footer`
@@ -49,23 +48,6 @@ const Brand = styled(Link)`
   }
 `;
 
-const Heading = styled.h1`
-  align-self: flex-start;
-  font-size: 6rem;
-  font-weight: 700;
-  color: white;
-  margin-left: 10vw;
-
-  @media (max-width: 1024px) {
-    font-size: 4rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 3rem;
-    margin: 0;
-    align-self: center;
-  }
-`;
 const LinksContainer = styled.ul`
   width: 70%;
   display: flex;
@@ -98,26 +80,19 @@ const LinksContainer = styled.ul`
     }
   }
 
-  a:after {
+  a.active:after {
     content: "";
 
     width: 70%;
     position: absolute;
     left: 15%;
-    bottom: -2rem;
+    bottom: -0.75rem;
     border-width: 0 0 2px;
     border-style: solid;
     border-color: white;
-    opacity: 0;
+    opacity: 1;
 
     transition: all 0.2s;
-  }
-
-  a:hover:after {
-    content: "";
-
-    opacity: 1;
-    bottom: -0.75rem;
   }
 `;
 
@@ -125,9 +100,18 @@ const Footer = () => (
   <Wrapper>
     <Brand to="/">Сказка</Brand>
     <LinksContainer>
-      <Link to="/">Главная</Link>
-      <Link to="/blog">Новости</Link>
-      <Link to="/products">Продукция</Link>
+      <Link activeClassName="active" to="/contacts">
+        О Нас
+      </Link>
+      <Link activeClassName="active" to="/partners">
+        Партнёрам
+      </Link>
+      <Link activeClassName="active" to="/products">
+        Продукция
+      </Link>
+      <Link activeClassName="active" to="/coverage">
+        Доставка
+      </Link>
     </LinksContainer>
   </Wrapper>
 );

@@ -59,8 +59,8 @@ const Brand = styled(Link)`
 `;
 const LargeGraphic = styled.img`
   position: absolute;
-  top: -1px;
-  right: -1px;
+  top: 0;
+  right: 0;
   width: 47%;
   z-index: -5;
 
@@ -170,15 +170,16 @@ const Info = styled.p`
     text-align: center;
   }
 `;
-const InfoButton = styled.a`
+const InfoButton = styled(Link)`
   display: inline-block;
-  margin: 2rem 4rem;
+  margin: 2rem 0;
   padding: 1rem 4rem;
   border-radius: 3rem;
   border: none;
   background: ${orangeGradient};
   font-family: "Ubuntu", sans-serif;
   font-size: 2.3rem;
+  font-weight: 700;
   color: white;
   text-decoration: none;
 
@@ -196,7 +197,7 @@ const InfoButton = styled.a`
   }
 
   @media (max-width: 599px) {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 `;
 
@@ -207,16 +208,31 @@ const Header = ({ isHome }) => (
       <LinksContainer>
         {isHome ? (
           <>
+            <a className="active" href="#about">
+              О Нас
+            </a>
             <a href="#contacts">Где Мы</a>
-            <Link to="/about">Дистрибуция</Link>
-            <Link to="/products">Продукция</Link>
+            <Link activeClassName="active" to="/products">
+              Продукция
+            </Link>
+            <Link activeClassName="active" to="/coverage">
+              Доставка
+            </Link>
           </>
         ) : (
           <>
-            <Link to="/">Главная</Link>
-            <Link to="/blog">Дистрибуция</Link>
-            <Link to="/blog">Партнёрам</Link>
-            <Link to="/products">Продукция</Link>
+            <Link activeClassName="active" to="/contacts">
+              О Нас
+            </Link>
+            <Link activeClassName="active" to="/partners">
+              Партнёрам
+            </Link>
+            <Link activeClassName="active" to="/products">
+              Продукция
+            </Link>
+            <Link activeClassName="active" to="/coverage">
+              Доставка
+            </Link>
           </>
         )}
       </LinksContainer>
@@ -228,7 +244,7 @@ const Header = ({ isHome }) => (
           Компания Сказка занимается дистрибуцией кондитерской продукции на
           территории Акмолинской и Северо-Казахстанской области
         </Info>
-        <InfoButton href="#contacts">Где Мы</InfoButton>
+        <InfoButton to="/contacts">Связаться с нами</InfoButton>
       </InfoWrapper>
     )}
   </Wrap>

@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 
 import HomeLayout from "../components/homeLayout";
 import SEO from "../components/seo";
-import { ContentWrapper, SectionHeading } from "../styled";
+import { ContentWrapper, SectionHeading, FloatingContentBox } from "../styled";
 
 import logos from "../images/logos";
 import { black, orange_light } from "../utilities/colors";
@@ -268,6 +269,38 @@ const IndexPage = () => (
     </ContentWrapper>
     <ContentWrapper>
       <RightGraphic src={rightGraphic} alt="Decorative graphic" />
+      <SectionHeading>О Нас</SectionHeading>
+      <FloatingContentBox>
+        <p>
+          Компания Сказка - один из крупнейших дистрибьюторов кондитерских
+          изделий по северу Казахстана.
+        </p>
+        <p>
+          Мы предоставляем огромный выбор кондитерских изделий производителей
+          Казахстана, России, Украины и Узбекистана. В нашей команде более 70
+          работников в 3 офисах: Кокшетау, Костанай и Петропавловск.
+        </p>
+        <p>
+          Мы специализируемся на дистрибуции кондитерских изделий, таких как
+          шоколад, печенье, пряники, конфеты и прочее, смотрите подробнее на
+          странице <Link to="/products">Продукция</Link>.
+        </p>
+        <p>
+          Наша доставка работает без выходных и доставляет в практически любой
+          населенный пункт в Акмолинской, Костанайской и Северо-Казахстанской
+          области. Подробнее о том, куда мы доставляем смотрите на странице{" "}
+          <Link to="/coverage">Доставка</Link>
+        </p>
+        <p>
+          Ищете дистрибьютера для вашего товара? Читайте на странице{" "}
+          <Link to="/partners">Партнёрам</Link> как мы можем эффективно помочь
+          вам увеличить продажи и присутствие вашего товара в северном
+          Казахстане.
+        </p>
+      </FloatingContentBox>
+    </ContentWrapper>
+    <ContentWrapper>
+      <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
       <SectionHeading>Контакты:</SectionHeading>
       <ContactsContainer id="contacts">
         <ContactCard>

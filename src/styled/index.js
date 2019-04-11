@@ -24,7 +24,7 @@ export const ContentWrapper = styled.section`
 export const SectionHeading = styled.h1`
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 2.2rem;
   line-height: 1.2;
   color: ${black};
@@ -74,4 +74,26 @@ export const Paragraph = styled.p`
   font-size: 1rem;
   margin: 0.5rem;
   text-align: center;
+`;
+
+export const FloatingContentBox = styled.div`
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 2rem;
+
+  p {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  a {
+    color: ${orange_light};
+    text-decoration: none;
+    font-style: italic;
+  }
 `;
