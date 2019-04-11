@@ -92,18 +92,19 @@ const LinksContainer = styled.ul`
     margin: 0.5rem 1rem;
     color: ${black};
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 
     @media (max-width: 1440px) {
-      font-size: 1.8rem;
-    }
-
-    @media (max-width: 1200px) {
       font-size: 1.3rem;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       font-size: 1.1rem;
+      margin: 0.5rem;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 1rem;
     }
 
     @media (max-width: 599px) {
@@ -145,7 +146,7 @@ const InfoWrapper = styled.div`
 const Info = styled.p`
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   line-height: 1.2;
   color: ${black};
   margin: 0.5rem;
@@ -155,15 +156,15 @@ const Info = styled.p`
   border-left: 2px solid ${orange_light};
 
   @media (max-width: 1440px) {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   @media (max-width: 1024px) {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 850px) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   @media (max-width: 599px) {
@@ -181,20 +182,20 @@ const InfoButton = styled.a`
   border: none;
   background: ${orangeGradient};
   font-family: "Ubuntu", sans-serif;
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: white;
   text-decoration: none;
 
   @media (max-width: 1440px) {
-    font-size: 2.2rem;
-  }
-
-  @media (max-width: 1024px) {
     font-size: 1.8rem;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 1024px) {
     font-size: 1.3rem;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 1.2rem;
     margin: 2rem;
   }
 
