@@ -4911,7 +4911,7 @@ var Heading = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withC
 var LinksContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConfig({
   displayName: "footer__LinksContainer",
   componentId: "sc-12ujmun-2"
-})(["width:70%;display:flex;align-items:center;justify-content:space-evenly;padding:1rem 10rem;@media (max-width:768px){padding:1rem;}@media (max-width:599px){width:100%;padding:1rem 0;}a{color:white;font-size:1.8rem;text-decoration:none;font-weight:300;position:relative;@media (max-width:1024px){font-size:1.3rem;}@media (max-width:599px){font-size:0.9rem;margin:0rem;}}a:after{content:\"\";width:70%;position:absolute;left:15%;bottom:-2rem;border-width:0 0 2px;border-style:solid;border-color:white;opacity:0;transition:all 0.2s;}a:hover:after{content:\"\";opacity:1;bottom:-0.75rem;}"]);
+})(["width:70%;display:flex;align-items:center;justify-content:space-evenly;@media (max-width:768px){padding:1rem;}@media (max-width:599px){width:100%;padding:1rem 0;}a{color:white;font-size:1.8rem;text-decoration:none;font-weight:300;position:relative;@media (max-width:1024px){font-size:1.3rem;}@media (max-width:599px){font-size:0.9rem;margin:0rem;}}a:after{content:\"\";width:70%;position:absolute;left:15%;bottom:-2rem;border-width:0 0 2px;border-style:solid;border-color:white;opacity:0;transition:all 0.2s;}a:hover:after{content:\"\";opacity:1;bottom:-0.75rem;}"]);
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Wrapper, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Heading, null, "\u0421\u043A\u0430\u0437\u043A\u0430"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(LinksContainer, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
@@ -4970,7 +4970,7 @@ var LargeGraphic = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img
 var LinksContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].ul.withConfig({
   displayName: "header__LinksContainer",
   componentId: "sc-13l89u8-4"
-})(["margin-top:2rem;display:flex;width:100%;justify-content:space-around;@media (max-width:1200px){margin-top:1rem;}@media (max-width:850px){margin-top:0.5rem;}@media (max-width:599px){}a{position:relative;font-family:\"Ubuntu\",sans-serif;font-weight:300;margin:0.5rem 1rem;color:", ";text-decoration:none;font-size:2.4rem;@media (max-width:1440px){font-size:1.8rem;}@media (max-width:1200px){font-size:1.3rem;}@media (max-width:850px){font-size:1.1rem;}@media (max-width:599px){font-size:0.9rem;text-align:center;margin:0.1rem;}}a.active:after{content:\"\";width:70%;position:absolute;left:15%;bottom:-0.75rem;border-width:0 0 2px;border-style:solid;border-color:", ";}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["black"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orange_light"]);
+})(["margin-top:2rem;display:flex;width:100%;justify-content:space-around;@media (max-width:1200px){margin-top:1rem;}@media (max-width:850px){margin-top:0.5rem;}@media (max-width:599px){}a{position:relative;font-family:\"Ubuntu\",sans-serif;font-weight:300;margin:0.5rem 1rem;color:", ";text-decoration:none;font-size:1.5rem;@media (max-width:1440px){font-size:1.3rem;}@media (max-width:1200px){font-size:1.1rem;margin:0.5rem;}@media (max-width:1000px){font-size:1rem;}@media (max-width:599px){font-size:0.9rem;text-align:center;margin:0.1rem;}}a.active:after{content:\"\";width:70%;position:absolute;left:15%;bottom:-0.75rem;border-width:0 0 2px;border-style:solid;border-color:", ";}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["black"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orange_light"]);
 var InfoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "header__InfoWrapper",
   componentId: "sc-13l89u8-5"
@@ -4978,11 +4978,11 @@ var InfoWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.
 var Info = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "header__Info",
   componentId: "sc-13l89u8-6"
-})(["font-family:\"Ubuntu\",sans-serif;font-weight:300;font-size:2.8rem;line-height:1.2;color:", ";margin:0.5rem;margin-left:0;padding:0.5rem;padding-left:1.5rem;border-left:2px solid ", ";@media (max-width:1440px){font-size:2.2rem;}@media (max-width:1024px){font-size:1.6rem;}@media (max-width:850px){font-size:1.4rem;}@media (max-width:599px){padding:2rem 1rem;margin:0;border:none;text-align:center;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["black"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orange_light"]);
+})(["font-family:\"Ubuntu\",sans-serif;font-weight:300;font-size:2.3rem;line-height:1.2;color:", ";margin:0.5rem;margin-left:0;padding:0.5rem;padding-left:1.5rem;border-left:2px solid ", ";@media (max-width:1440px){font-size:1.8rem;}@media (max-width:1024px){font-size:1.3rem;}@media (max-width:850px){font-size:1.2rem;}@media (max-width:599px){padding:2rem 1rem;margin:0;border:none;text-align:center;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["black"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orange_light"]);
 var InfoButton = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].a.withConfig({
   displayName: "header__InfoButton",
   componentId: "sc-13l89u8-7"
-})(["display:inline-block;margin:2rem 4rem;padding:1rem 4rem;border-radius:3rem;border:none;background:", ";font-family:\"Ubuntu\",sans-serif;font-size:3rem;color:white;text-decoration:none;@media (max-width:1440px){font-size:2.2rem;}@media (max-width:1024px){font-size:1.8rem;}@media (max-width:850px){font-size:1.3rem;margin:2rem;}@media (max-width:599px){padding:1rem 3rem;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orangeGradient"]);
+})(["display:inline-block;margin:2rem 4rem;padding:1rem 4rem;border-radius:3rem;border:none;background:", ";font-family:\"Ubuntu\",sans-serif;font-size:2.3rem;color:white;text-decoration:none;@media (max-width:1440px){font-size:1.8rem;}@media (max-width:1024px){font-size:1.3rem;}@media (max-width:850px){font-size:1.2rem;margin:2rem;}@media (max-width:599px){padding:1rem 3rem;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orangeGradient"]);
 
 var Header = function Header(_ref) {
   var isHome = _ref.isHome;
