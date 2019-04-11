@@ -37,20 +37,20 @@ const TopSectionWrap = styled.div`
 const Brand = styled(Link)`
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 6rem;
   text-decoration: none;
   color: ${black};
 
   @media (max-width: 1440px) {
-    font-size: 5rem;
-  }
-
-  @media (max-width: 1200px) {
     font-size: 4rem;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 1200px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 2rem;
   }
 
   @media (max-width: 599px) {
@@ -59,9 +59,9 @@ const Brand = styled(Link)`
 `;
 const LargeGraphic = styled.img`
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;
+  top: -1px;
+  right: -1px;
+  width: 47%;
   z-index: -5;
 
   @media (max-width: 850px) {
@@ -69,14 +69,10 @@ const LargeGraphic = styled.img`
   }
 `;
 const LinksContainer = styled.ul`
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   width: 100%;
   justify-content: space-around;
-
-  @media (max-width: 1200px) {
-    margin-top: 1rem;
-  }
 
   @media (max-width: 850px) {
     margin-top: 0.5rem;
@@ -130,7 +126,7 @@ const LinksContainer = styled.ul`
 `;
 const InfoWrapper = styled.div`
   width: 45%;
-  margin: 12% 2rem;
+  margin: 12% 6%;
 
   @media (max-width: 850px) {
     width: 70%;
@@ -211,17 +207,15 @@ const Header = ({ isHome }) => (
       <LinksContainer>
         {isHome ? (
           <>
-            <a href="#about" className="active">
-              О Нас
-            </a>
             <a href="#contacts">Где Мы</a>
-            <Link to="/blog">Новости</Link>
+            <Link to="/about">Дистрибуция</Link>
             <Link to="/products">Продукция</Link>
           </>
         ) : (
           <>
             <Link to="/">Главная</Link>
-            <Link to="/blog">Новости</Link>
+            <Link to="/blog">Дистрибуция</Link>
+            <Link to="/blog">Партнёрам</Link>
             <Link to="/products">Продукция</Link>
           </>
         )}

@@ -6,22 +6,14 @@ import bottomGraphic from "../images/bot.svg";
 import { orangeGradient } from "../utilities/colors";
 
 const Wrapper = styled.footer`
-  position: relative;
-  height: 25rem;
-  background-image: url(${bottomGraphic});
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: ${orangeGradient};
+  padding: 2rem 0;
   width: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
   justify-content: space-evenly;
-
-  @media (max-width: 1024px) {
-    height: 20rem;
-  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -31,11 +23,29 @@ const Wrapper = styled.footer`
     align-items: center;
     justify-content: center;
   }
+`;
+
+const Brand = styled(Link)`
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  text-decoration: none;
+  color: white;
+
+  @media (max-width: 1440px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 2rem;
+  }
 
   @media (max-width: 599px) {
-    height: auto;
-    background: ${orangeGradient};
-    padding: 2rem 0;
+    font-size: 5rem;
   }
 `;
 
@@ -113,7 +123,7 @@ const LinksContainer = styled.ul`
 
 const Footer = () => (
   <Wrapper>
-    <Heading>Сказка</Heading>
+    <Brand to="/">Сказка</Brand>
     <LinksContainer>
       <Link to="/">Главная</Link>
       <Link to="/blog">Новости</Link>

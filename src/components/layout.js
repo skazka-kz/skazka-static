@@ -6,6 +6,9 @@ import { SiteWrapper } from "../styled";
 
 const InnerContent = styled.div`
   min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const HomeLayout = ({ children }) => {

@@ -233,16 +233,16 @@ const Notice = styled.p`
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   font-style: italic;
   color: ${black};
 
   @media (max-width: 1440px) {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 
   @media (max-width: 1024px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   @media (max-width: 768px) {
@@ -253,7 +253,7 @@ const Notice = styled.p`
 
 const IndexPage = () => (
   <HomeLayout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Сказка" />
     <ContentWrapper>
       <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
       <SectionHeading>Наши Партнёры:</SectionHeading>
