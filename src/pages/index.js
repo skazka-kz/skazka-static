@@ -4,7 +4,12 @@ import styled from "styled-components";
 
 import HomeLayout from "../components/homeLayout";
 import SEO from "../components/seo";
-import { ContentWrapper, SectionHeading, FloatingContentBox } from "../styled";
+import {
+  ContentWrapper,
+  SectionHeading,
+  FloatingContentBox,
+  InfoButtonLink,
+} from "../styled";
 
 import logos from "../images/logos";
 import { black, orange_light } from "../utilities/colors";
@@ -332,6 +337,7 @@ const IndexPage = () => (
           </MapLink>
         </ContactCard>
       </ContactsContainer>
+      <InfoButtonLink to="/contacts">Связаться с Нами</InfoButtonLink>
     </ContentWrapper>
   </HomeLayout>
 );

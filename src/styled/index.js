@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { black, orange_light } from "../utilities/colors";
+import { Link } from "gatsby";
+import { black, orange_light, orangeGradient } from "../utilities/colors";
 
 export const SiteWrapper = styled.main`
   font-family: "Ubuntu", sans-serif;
@@ -18,6 +19,10 @@ export const ContentWrapper = styled.section`
   @media (max-width: 1024px) {
     margin: 5% 0;
     padding: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -78,7 +83,7 @@ export const Paragraph = styled.p`
 
 export const FloatingContentBox = styled.div`
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  max-width: 900px;
+  max-width: 800px;
   padding: 2rem;
   background-color: white;
   border-radius: 1rem;
@@ -91,9 +96,54 @@ export const FloatingContentBox = styled.div`
     line-height: 1.5;
   }
 
+  p:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  p:first-of-type {
+    margin-top: 1rem;
+  }
+
   a {
     color: ${orange_light};
     text-decoration: none;
     font-style: italic;
+  }
+
+  @media (max-width: 1280px) {
+    p {
+      font-size: ;
+    }
+  }
+`;
+
+export const InfoButtonLink = styled(Link)`
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  background: ${orangeGradient};
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 1.2rem;
+    margin: 2rem;
+  }
+
+  @media (max-width: 599px) {
+    padding: 1rem 2rem;
   }
 `;

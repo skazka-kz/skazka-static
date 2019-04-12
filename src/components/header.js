@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 import { black, orange_light, orangeGradient } from "../utilities/colors";
+import { InfoButtonLink } from "../styled";
 
 import CookieGraphic from "../images/top_right.svg";
 
@@ -170,36 +171,6 @@ const Info = styled.p`
     text-align: center;
   }
 `;
-const InfoButton = styled(Link)`
-  display: inline-block;
-  margin: 2rem 0;
-  padding: 1rem 4rem;
-  border-radius: 3rem;
-  border: none;
-  background: ${orangeGradient};
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-
-  @media (max-width: 1440px) {
-    font-size: 1.8rem;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 1.3rem;
-  }
-
-  @media (max-width: 850px) {
-    font-size: 1.2rem;
-    margin: 2rem;
-  }
-
-  @media (max-width: 599px) {
-    padding: 1rem 2rem;
-  }
-`;
 
 const Header = ({ isHome }) => (
   <Wrap>
@@ -244,7 +215,7 @@ const Header = ({ isHome }) => (
           Компания Сказка занимается дистрибуцией кондитерской продукции на
           территории Акмолинской и Северо-Казахстанской области
         </Info>
-        <InfoButton to="/contacts">Связаться с нами</InfoButton>
+        <InfoButtonLink to="/contacts">Связаться с нами</InfoButtonLink>
       </InfoWrapper>
     )}
   </Wrap>
