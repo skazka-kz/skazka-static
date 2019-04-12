@@ -6,3 +6,4 @@ export const orangeGradient = `linear-gradient(
     rgba(250, 175, 59, 1),
     rgba(246, 146, 30, 1)
   );`;
+export const boxShadow = `box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);`;

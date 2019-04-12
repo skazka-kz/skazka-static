@@ -100,7 +100,7 @@ const Footer = () => (
   <Wrapper>
     <Brand to="/">Сказка</Brand>
     <LinksContainer>
-      <Link activeClassName="active" to="/contacts">
+      <Link activeClassName="active" to="/about">
         О Нас
       </Link>
       <Link activeClassName="active" to="/partners">
@@ -109,8 +109,8 @@ const Footer = () => (
       <Link activeClassName="active" to="/products">
         Продукция
       </Link>
-      <Link activeClassName="active" to="/coverage">
-        Доставка
+      <Link activeClassName="active" to="/contacts">
+        Контакты
       </Link>
     </LinksContainer>
   </Wrapper>

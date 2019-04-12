@@ -3,21 +3,12 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ContactForm from "../components/ContactForm";
 
-import {
-  PostWrapper,
-  H1,
-  Paragraph,
-  ContentWrapper,
-  SectionHeading,
-} from "../styled";
+import { PostWrapper, H1, Paragraph } from "../styled";
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="О Нас" />
-    <ContactForm />
-
     <PostWrapper>
       <H1>О Нас</H1>
       <Paragraph>

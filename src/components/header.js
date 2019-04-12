@@ -192,7 +192,7 @@ const Header = ({ isHome }) => (
           </>
         ) : (
           <>
-            <Link activeClassName="active" to="/contacts">
+            <Link activeClassName="active" to="/about">
               О Нас
             </Link>
             <Link activeClassName="active" to="/partners">
@@ -201,8 +201,8 @@ const Header = ({ isHome }) => (
             <Link activeClassName="active" to="/products">
               Продукция
             </Link>
-            <Link activeClassName="active" to="/coverage">
-              Доставка
+            <Link activeClassName="active" to="/contacts">
+              Контакты
             </Link>
           </>
         )}

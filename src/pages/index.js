@@ -12,7 +12,7 @@ import {
 } from "../styled";
 
 import logos from "../images/logos";
-import { black, orange_light } from "../utilities/colors";
+import { black, orange_light, boxShadow } from "../utilities/colors";
 import leftGraphic from "../images/left.svg";
 import rightGraphic from "../images/right.svg";
 
@@ -78,7 +78,7 @@ const PartnerCard = styled.div`
   background-color: white;
   border-radius: 3rem;
 
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  ${boxShadow};
   height: 33rem;
   padding: 2rem;
 
@@ -136,7 +136,7 @@ const ContactCard = styled.div`
   margin: 1rem;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  ${boxShadow};
   display: flex;
   flex-direction: column;
   padding: 1rem 4rem;

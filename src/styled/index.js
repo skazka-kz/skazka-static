@@ -112,8 +112,18 @@ export const FloatingContentBox = styled.div`
 
   @media (max-width: 1280px) {
     p {
-      font-size: ;
+      font-size: 1.2rem;
     }
+  }
+
+  @media (max-width: 1024px) {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 599px) {
+    padding: 0.5rem;
   }
 `;
 
