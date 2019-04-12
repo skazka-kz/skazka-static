@@ -363,7 +363,7 @@ exports.wrapRootElement = true;
 /*! exports provided: pages, dataPaths, default */
 /***/ (function(module) {
 
-module.exports = {"pages":[{"componentChunkName":"component---src-pages-index-js","jsonName":"index","path":"/"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-html-516","path":"/404.html"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-22d","path":"/404/"},{"componentChunkName":"component---src-pages-contacts-js","jsonName":"contacts-d23","path":"/contacts/"},{"componentChunkName":"component---src-pages-coverage-js","jsonName":"coverage-c90","path":"/coverage/"},{"componentChunkName":"component---src-pages-partners-js","jsonName":"partners-e99","path":"/partners/"},{"componentChunkName":"component---src-pages-products-js","jsonName":"products-6ef","path":"/products/"}],"dataPaths":{"404-22d":"820/path---404-22-d-bce-0SUcWyAf8ecbYDsMhQkEfPzV8","404-html-516":"285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8","about-f34":"708/path---about-f-34-4c2-0SUcWyAf8ecbYDsMhQkEfPzV8","clients-0df":"227/path---clients-0-df-854-0SUcWyAf8ecbYDsMhQkEfPzV8","contacts-d23":"71/path---contacts-d-23-81b-0SUcWyAf8ecbYDsMhQkEfPzV8","coverage-c90":"159/path---coverage-c-90-226-0SUcWyAf8ecbYDsMhQkEfPzV8","dev-404-page-5f9":"386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8","distribution-3f8":"68/path---distribution-3-f-8-02e-0SUcWyAf8ecbYDsMhQkEfPzV8","index":"140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8","partners-e99":"652/path---partners-e-99-4cc-0SUcWyAf8ecbYDsMhQkEfPzV8","products-6ef":"363/path---products-6-ef-42b-0SUcWyAf8ecbYDsMhQkEfPzV8","sq--src-components-seo-js":2417117884}};
+module.exports = {"pages":[{"componentChunkName":"component---src-pages-index-js","jsonName":"index","path":"/"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-html-516","path":"/404.html"},{"componentChunkName":"component---src-pages-404-js","jsonName":"404-22d","path":"/404/"},{"componentChunkName":"component---src-pages-about-js","jsonName":"about-f34","path":"/about/"},{"componentChunkName":"component---src-pages-contacts-js","jsonName":"contacts-d23","path":"/contacts/"},{"componentChunkName":"component---src-pages-coverage-js","jsonName":"coverage-c90","path":"/coverage/"},{"componentChunkName":"component---src-pages-partners-js","jsonName":"partners-e99","path":"/partners/"},{"componentChunkName":"component---src-pages-products-js","jsonName":"products-6ef","path":"/products/"}],"dataPaths":{"404-22d":"820/path---404-22-d-bce-0SUcWyAf8ecbYDsMhQkEfPzV8","404-html-516":"285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8","about-f34":"708/path---about-f-34-4c2-0SUcWyAf8ecbYDsMhQkEfPzV8","clients-0df":"227/path---clients-0-df-854-0SUcWyAf8ecbYDsMhQkEfPzV8","contacts-1-dd9":"379/path---contacts-1-dd-9-ba6-0SUcWyAf8ecbYDsMhQkEfPzV8","contacts-d23":"71/path---contacts-d-23-81b-0SUcWyAf8ecbYDsMhQkEfPzV8","coverage-c90":"159/path---coverage-c-90-226-0SUcWyAf8ecbYDsMhQkEfPzV8","dev-404-page-5f9":"386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8","distribution-3f8":"68/path---distribution-3-f-8-02e-0SUcWyAf8ecbYDsMhQkEfPzV8","index":"140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8","partners-e99":"652/path---partners-e-99-4cc-0SUcWyAf8ecbYDsMhQkEfPzV8","products-6ef":"363/path---products-6-ef-42b-0SUcWyAf8ecbYDsMhQkEfPzV8","sq--src-components-seo-js":2417117884}};
 
 /***/ }),
 
@@ -982,6 +982,7 @@ var preferDefault = function preferDefault(m) {
 
 exports.components = {
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
+  "component---src-pages-about-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js"))),
   "component---src-pages-contacts-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/contacts.js */ "./src/pages/contacts.js"))),
   "component---src-pages-coverage-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/coverage.js */ "./src/pages/coverage.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
@@ -4883,6 +4884,63 @@ module.exports = {"data":{"site":{"siteMetadata":{"title":"Сказка - Дис
 
 /***/ }),
 
+/***/ "./src/components/ContactForm.js":
+/*!***************************************!*\
+  !*** ./src/components/ContactForm.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _utilities_colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utilities/colors */ "./src/utilities/colors.js");
+
+
+
+var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "ContactForm__Wrapper",
+  componentId: "sc-10kut8q-0"
+})(["margin:1rem;width:100%;max-width:600px;"]);
+var Form = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].form.withConfig({
+  displayName: "ContactForm__Form",
+  componentId: "sc-10kut8q-1"
+})(["display:flex;flex-direction:column;"]);
+var PrettyInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].input.withConfig({
+  displayName: "ContactForm__PrettyInput",
+  componentId: "sc-10kut8q-2"
+})(["font-weight:300;", ";padding:1rem;border:none;border-radius:0.5rem;margin:0.75rem;color:", ";font-size:1.25rem;&::placeholder{color:", ";}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["boxShadow"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["orange_dark"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["orange_dark"]);
+var ContentInput = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].textarea.withConfig({
+  displayName: "ContactForm__ContentInput",
+  componentId: "sc-10kut8q-3"
+})(["font-family:\"Ubuntu\",sans-serif;", ";padding:1rem;border:none;border-radius:0.5rem;margin:0.75rem;color:", ";font-size:1.25rem;&::placeholder{color:", ";}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["boxShadow"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["orange_dark"], _utilities_colors__WEBPACK_IMPORTED_MODULE_2__["orange_dark"]);
+
+var ContactForm = function ContactForm() {
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Wrapper, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
+    onSubmit: handleSubmit
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PrettyInput, {
+    type: "text",
+    placeholder: "\u0412\u0430\u0448\u0435 \u0438\u043C\u044F:"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PrettyInput, {
+    type: "email",
+    placeholder: "E-mail:"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContentInput, {
+    multiline: true,
+    rows: "4",
+    placeholder: "\u041D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u043D\u0430\u043C, \u043E \u0447\u0451\u043C \u0445\u043E\u0442\u0438\u0442\u0435 \u0443\u0437\u043D\u0430\u0442\u044C..."
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
+
+/***/ }),
+
 /***/ "./src/components/footer.js":
 /*!**********************************!*\
   !*** ./src/components/footer.js ***!
@@ -4919,7 +4977,7 @@ var Footer = function Footer() {
     to: "/"
   }, "\u0421\u043A\u0430\u0437\u043A\u0430"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(LinksContainer, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
     activeClassName: "active",
-    to: "/contacts"
+    to: "/about"
   }, "\u041E \u041D\u0430\u0441"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
     activeClassName: "active",
     to: "/partners"
@@ -4928,8 +4986,8 @@ var Footer = function Footer() {
     to: "/products"
   }, "\u041F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u044F"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
     activeClassName: "active",
-    to: "/coverage"
-  }, "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430")));
+    to: "/contacts"
+  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -5010,7 +5068,7 @@ var Header = function Header(_ref) {
     to: "/coverage"
   }, "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     activeClassName: "active",
-    to: "/contacts"
+    to: "/about"
   }, "\u041E \u041D\u0430\u0441"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     activeClassName: "active",
     to: "/partners"
@@ -5019,8 +5077,8 @@ var Header = function Header(_ref) {
     to: "/products"
   }, "\u041F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u044F"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     activeClassName: "active",
-    to: "/coverage"
-  }, "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430"))), isHome && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LargeGraphic, {
+    to: "/contacts"
+  }, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"))), isHome && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LargeGraphic, {
     src: _images_top_right_svg__WEBPACK_IMPORTED_MODULE_6___default.a
   })), isHome && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoWrapper, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0421\u043A\u0430\u0437\u043A\u0430 \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u0443\u0446\u0438\u0435\u0439 \u043A\u043E\u043D\u0434\u0438\u0442\u0435\u0440\u0441\u043A\u043E\u0439 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438 \u043D\u0430 \u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438 \u0410\u043A\u043C\u043E\u043B\u0438\u043D\u0441\u043A\u043E\u0439 \u0438 \u0421\u0435\u0432\u0435\u0440\u043E-\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0441\u043A\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["InfoButtonLink"], {
     to: "/contacts"
@@ -5339,10 +5397,10 @@ var NotFoundPage = function NotFoundPage() {
 
 /***/ }),
 
-/***/ "./src/pages/contacts.js":
-/*!*******************************!*\
-  !*** ./src/pages/contacts.js ***!
-  \*******************************/
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5368,6 +5426,45 @@ var NotFoundPage = function NotFoundPage() {
   }, "\u041F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u044F"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], null, "\u041D\u0430\u0448\u0430 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0431\u0435\u0437 \u0432\u044B\u0445\u043E\u0434\u043D\u044B\u0445 \u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0432 \u043F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043B\u044E\u0431\u043E\u0439 \u043D\u0430\u0441\u0435\u043B\u0435\u043D\u043D\u044B\u0439 \u043F\u0443\u043D\u043A\u0442 \u0432 \u0410\u043A\u043C\u043E\u043B\u0438\u043D\u0441\u043A\u043E\u0439, \u041A\u043E\u0441\u0442\u0430\u043D\u0430\u0439\u0441\u043A\u043E\u0439 \u0438 \u0421\u0435\u0432\u0435\u0440\u043E-\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0441\u043A\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438. \u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \u043E \u0442\u043E\u043C, \u043A\u0443\u0434\u0430 \u043C\u044B \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/coverage"
   }, "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], null, "\u0418\u0449\u0435\u0442\u0435 \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u044C\u044E\u0442\u0435\u0440\u0430 \u0434\u043B\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u043E\u0432\u0430\u0440\u0430? \u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/partners"
+  }, "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u0430\u043C"), " \u043A\u0430\u043A \u043C\u044B \u043C\u043E\u0436\u0435\u043C \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E \u043F\u043E\u043C\u043E\u0447\u044C \u0432\u0430\u043C \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u043F\u0440\u043E\u0434\u0430\u0436\u0438 \u0438 \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435 \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u043E\u0432\u0430\u0440\u0430 \u0432 \u0441\u0435\u0432\u0435\u0440\u043D\u043E\u043C \u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0435.")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NotFoundPage);
+
+/***/ }),
+
+/***/ "./src/pages/contacts.js":
+/*!*******************************!*\
+  !*** ./src/pages/contacts.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _components_ContactForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ContactForm */ "./src/components/ContactForm.js");
+/* harmony import */ var _styled__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styled */ "./src/styled/index.js");
+
+
+
+
+
+
+
+var NotFoundPage = function NotFoundPage() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: "\u041E \u041D\u0430\u0441"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ContactForm__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["PostWrapper"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["H1"], null, "\u041E \u041D\u0430\u0441"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0421\u043A\u0430\u0437\u043A\u0430 - \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u044C\u044E\u0442\u043E\u0440\u043E\u0432 \u043A\u043E\u043D\u0434\u0438\u0442\u0435\u0440\u0441\u043A\u0438\u0445 \u0438\u0437\u0434\u0435\u043B\u0438\u0439 \u043F\u043E \u0441\u0435\u0432\u0435\u0440\u0443 \u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0430."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\u041C\u044B \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440 \u043A\u043E\u043D\u0434\u0438\u0442\u0435\u0440\u0441\u043A\u0438\u0445 \u0438\u0437\u0434\u0435\u043B\u0438\u0439 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439 \u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0430, \u0420\u043E\u0441\u0441\u0438\u0438, \u0423\u043A\u0440\u0430\u0438\u043D\u044B \u0438 \u0423\u0437\u0431\u0435\u043A\u0438\u0441\u0442\u0430\u043D\u0430. \u0412 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u0431\u043E\u043B\u0435\u0435 70 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432 \u0432 3 \u043E\u0444\u0438\u0441\u0430\u0445: \u041A\u043E\u043A\u0448\u0435\u0442\u0430\u0443, \u041A\u043E\u0441\u0442\u0430\u043D\u0430\u0439 \u0438 \u041F\u0435\u0442\u0440\u043E\u043F\u0430\u0432\u043B\u043E\u0432\u0441\u043A."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\u041C\u044B \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u0443\u0435\u043C\u0441\u044F \u043D\u0430 \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u0443\u0446\u0438\u0438 \u043A\u043E\u043D\u0434\u0438\u0442\u0435\u0440\u0441\u043A\u0438\u0445 \u0438\u0437\u0434\u0435\u043B\u0438\u0439, \u0442\u0430\u043A\u0438\u0445 \u043A\u0430\u043A \u0448\u043E\u043A\u043E\u043B\u0430\u0434, \u043F\u0435\u0447\u0435\u043D\u044C\u0435, \u043F\u0440\u044F\u043D\u0438\u043A\u0438, \u043A\u043E\u043D\u0444\u0435\u0442\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435, \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/products"
+  }, "\u041F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u044F"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\u041D\u0430\u0448\u0430 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0431\u0435\u0437 \u0432\u044B\u0445\u043E\u0434\u043D\u044B\u0445 \u0438 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0432 \u043F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043B\u044E\u0431\u043E\u0439 \u043D\u0430\u0441\u0435\u043B\u0435\u043D\u043D\u044B\u0439 \u043F\u0443\u043D\u043A\u0442 \u0432 \u0410\u043A\u043C\u043E\u043B\u0438\u043D\u0441\u043A\u043E\u0439, \u041A\u043E\u0441\u0442\u0430\u043D\u0430\u0439\u0441\u043A\u043E\u0439 \u0438 \u0421\u0435\u0432\u0435\u0440\u043E-\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0441\u043A\u043E\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438. \u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \u043E \u0442\u043E\u043C, \u043A\u0443\u0434\u0430 \u043C\u044B \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/coverage"
+  }, "\u0414\u043E\u0441\u0442\u0430\u0432\u043A\u0430")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styled__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\u0418\u0449\u0435\u0442\u0435 \u0434\u0438\u0441\u0442\u0440\u0438\u0431\u044C\u044E\u0442\u0435\u0440\u0430 \u0434\u043B\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u043E\u0432\u0430\u0440\u0430? \u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/partners"
   }, "\u041F\u0430\u0440\u0442\u043D\u0451\u0440\u0430\u043C"), " \u043A\u0430\u043A \u043C\u044B \u043C\u043E\u0436\u0435\u043C \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E \u043F\u043E\u043C\u043E\u0447\u044C \u0432\u0430\u043C \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u043F\u0440\u043E\u0434\u0430\u0436\u0438 \u0438 \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435 \u0432\u0430\u0448\u0435\u0433\u043E \u0442\u043E\u0432\u0430\u0440\u0430 \u0432 \u0441\u0435\u0432\u0435\u0440\u043D\u043E\u043C \u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D\u0435.")));
 };
@@ -5464,7 +5561,7 @@ var CardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].d
 var PartnerCard = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__PartnerCard",
   componentId: "sc-1kdlu6i-4"
-})(["display:flex;align-items:center;justify-content:center;margin:1rem;background-color:white;border-radius:3rem;box-shadow:0 0 1rem rgba(0,0,0,0.2);height:33rem;padding:2rem;img{width:100%;@media (max-width:768px){width:90%;}@media (max-width:599px){max-height:100%;width:auto;max-width:100%;}}@media (max-width:1440px){height:22rem;}@media (max-width:1024px){height:14rem;}@media (max-width:768px){padding:3rem;margin:1.5rem;}@media (max-width:599px){padding:1rem;margin:1rem;}"]);
+})(["display:flex;align-items:center;justify-content:center;margin:1rem;background-color:white;border-radius:3rem;", ";height:33rem;padding:2rem;img{width:100%;@media (max-width:768px){width:90%;}@media (max-width:599px){max-height:100%;width:auto;max-width:100%;}}@media (max-width:1440px){height:22rem;}@media (max-width:1024px){height:14rem;}@media (max-width:768px){padding:3rem;margin:1.5rem;}@media (max-width:599px){padding:1rem;margin:1rem;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_7__["boxShadow"]);
 var ContactsContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ContactsContainer",
   componentId: "sc-1kdlu6i-5"
@@ -5472,7 +5569,7 @@ var ContactsContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"
 var ContactCard = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "pages__ContactCard",
   componentId: "sc-1kdlu6i-6"
-})(["margin:1rem;background-color:white;border-radius:1rem;box-shadow:0 0 1rem rgba(0,0,0,0.2);display:flex;flex-direction:column;padding:1rem 4rem;font-family:\"Ubuntu\",sans-serif;text-align:center;height:30rem;justify-content:space-between;padding-bottom:5rem;@media (max-width:1440px){height:25rem;}@media (max-width:1024px){padding:2rem 1rem;height:18rem;}"]);
+})(["margin:1rem;background-color:white;border-radius:1rem;", ";display:flex;flex-direction:column;padding:1rem 4rem;font-family:\"Ubuntu\",sans-serif;text-align:center;height:30rem;justify-content:space-between;padding-bottom:5rem;@media (max-width:1440px){height:25rem;}@media (max-width:1024px){padding:2rem 1rem;height:18rem;}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_7__["boxShadow"]);
 var Name = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
   displayName: "pages__Name",
   componentId: "sc-1kdlu6i-7"
@@ -5678,7 +5775,7 @@ var InfoButtonLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["defa
 /*!*********************************!*\
   !*** ./src/utilities/colors.js ***!
   \*********************************/
-/*! exports provided: orange_light, orange_dark, black, orangeGradient */
+/*! exports provided: orange_light, orange_dark, black, orangeGradient, boxShadow */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5687,10 +5784,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orange_dark", function() { return orange_dark; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "black", function() { return black; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orangeGradient", function() { return orangeGradient; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "boxShadow", function() { return boxShadow; });
 var orange_light = "#F6921E";
 var orange_dark = "#F05A24";
 var black = "#121212";
 var orangeGradient = "linear-gradient(\n    75deg,\n    rgba(250, 175, 59, 1),\n    rgba(246, 146, 30, 1)\n  );";
+var boxShadow = "box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);";
 
 /***/ }),
 
