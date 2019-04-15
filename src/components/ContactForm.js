@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { boxShadow, orange_dark } from "../utilities/colors";
+import { boxShadow, orange_dark, orange_light } from "../utilities/colors";
+import { H1 } from "../styled";
 
 const Wrapper = styled.div`
   margin: 1rem;
@@ -21,12 +22,8 @@ const PrettyInput = styled.input`
   border: none;
   border-radius: 0.5rem;
   margin: 0.75rem;
-  color: ${orange_dark};
+  color: ${orange_light};
   font-size: 1.25rem;
-
-  &::placeholder {
-    color: ${orange_dark};
-  }
 `;
 
 const ContentInput = styled.textarea`
@@ -36,12 +33,9 @@ const ContentInput = styled.textarea`
   border: none;
   border-radius: 0.5rem;
   margin: 0.75rem;
-  color: ${orange_dark};
+  color: ${orange_light};
   font-size: 1.25rem;
-
-  &::placeholder {
-    color: ${orange_dark};
-  }
+  font-weight: 300;
 `;
 
 const ContactForm = () => {
@@ -51,6 +45,7 @@ const ContactForm = () => {
 
   return (
     <Wrapper>
+      <H1>Отправить сообщение</H1>
       <Form onSubmit={handleSubmit}>
         <PrettyInput type="text" placeholder="Ваше имя:" />
         <PrettyInput type="email" placeholder="E-mail:" />

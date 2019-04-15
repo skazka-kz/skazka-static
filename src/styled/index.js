@@ -73,6 +73,17 @@ export const H1 = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.75rem;
+    margin: 1.2rem 0;
+  }
 `;
 
 export const Paragraph = styled.p`
