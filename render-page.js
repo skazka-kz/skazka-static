@@ -8451,7 +8451,7 @@ var LargeGraphic = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img
   displayName: "header__LargeGraphic",
   componentId: "sc-13l89u8-3"
 })(["position:absolute;top:0;right:0;width:47%;z-index:-5;@media (max-width:850px){display:none;}"]);
-var LinksContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].ul.withConfig({
+var LinksContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "header__LinksContainer",
   componentId: "sc-13l89u8-4"
 })(["margin-top:1rem;display:flex;width:100%;justify-content:space-around;@media (max-width:850px){margin-top:0.5rem;}@media (max-width:599px){}a{position:relative;font-family:\"Ubuntu\",sans-serif;font-weight:300;margin:0.5rem 1rem;color:", ";text-decoration:none;font-size:1.5rem;@media (max-width:1440px){font-size:1.3rem;}@media (max-width:1200px){font-size:1.1rem;margin:0.5rem;}@media (max-width:1000px){font-size:1rem;}@media (max-width:599px){font-size:0.9rem;text-align:center;margin:0.1rem;}}a.active:after{content:\"\";width:70%;position:absolute;left:15%;bottom:-0.75rem;border-width:0 0 2px;border-style:solid;border-color:", ";}"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["black"], _utilities_colors__WEBPACK_IMPORTED_MODULE_4__["orange_light"]);
