@@ -69,7 +69,7 @@ const LargeGraphic = styled.img`
     display: none;
   }
 `;
-const LinksContainer = styled.ul`
+const LinksContainer = styled.div`
   margin-top: 1rem;
   display: flex;
   width: 100%;
