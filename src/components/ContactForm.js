@@ -30,6 +30,10 @@ const PrettyInput = styled.input`
   margin: 0.75rem;
   color: ${orange_light};
   font-size: 1.25rem;
+
+  &::placeholder {
+    font-weight: 300;
+  }
 `;
 
 const ContentInput = styled.textarea`
@@ -42,9 +46,15 @@ const ContentInput = styled.textarea`
   color: ${orange_light};
   font-size: 1.25rem;
   font-weight: 300;
+
+  &::placeholder {
+    font-weight: 300;
+  }
 `;
 
 const SubmitButton = styled.button`
+  display: flex;
+  align-items: center;
   align-self: center;
   margin: 1rem 0;
   padding: 1rem 2rem;
