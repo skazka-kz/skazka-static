@@ -44,7 +44,7 @@ const ContentInput = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
-  align-self: flex-end;
+  align-self: center;
   margin: 1rem 0;
   padding: 1rem 2rem;
   border-radius: 3rem;
@@ -72,7 +72,6 @@ const ContactForm = () => {
 
   return (
     <Wrapper>
-      <H1>Отправить сообщение</H1>
       <Form onSubmit={handleSubmit}>
         <PrettyInput type="text" placeholder="Ваше имя:" />
         <PrettyInput type="email" placeholder="E-mail:" />

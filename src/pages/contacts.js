@@ -1,52 +1,40 @@
 import React from "react";
-import { Link } from "gatsby";
+import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContactForm from "../components/ContactForm";
+import Contacts from "../components/ContactsSection";
 
 import {
-  PostWrapper,
-  H1,
-  Paragraph,
   ContentWrapper,
   SectionHeading,
+  LeftGraphic,
+  RightGraphic,
 } from "../styled";
 
-const NotFoundPage = () => (
+import leftGraphic from "../images/left.svg";
+import rightGraphic from "../images/right.svg";
+
+const FlexibleWrapper = styled(ContentWrapper)`
+  width: 100%;
+  margin: 5rem 0;
+`;
+
+const ContactUsPage = () => (
   <Layout>
     <SEO title="О Нас" />
-    <ContactForm />
-
-    <PostWrapper>
-      <H1>О Нас</H1>
-      <Paragraph>
-        Компания Сказка - один из крупнейших дистрибьюторов кондитерских изделий
-        по северу Казахстана.
-      </Paragraph>
-      <Paragraph>
-        Мы предоставляем огромный выбор кондитерских изделий производителей
-        Казахстана, России, Украины и Узбекистана. В нашей команде более 70
-        работников в 3 офисах: Кокшетау, Костанай и Петропавловск.
-      </Paragraph>
-      <Paragraph>
-        Мы специализируемся на дистрибуции кондитерских изделий, таких как
-        шоколад, печенье, пряники, конфеты и прочее, смотрите подробнее на
-        странице <Link to="/products">Продукция</Link>.
-      </Paragraph>
-      <Paragraph>
-        Наша доставка работает без выходных и доставляет в практически любой
-        населенный пункт в Акмолинской, Костанайской и Северо-Казахстанской
-        области. Подробнее о том, куда мы доставляем смотрите на странице{" "}
-        <Link to="/coverage">Доставка</Link>
-      </Paragraph>
-      <Paragraph>
-        Ищете дистрибьютера для вашего товара? Читайте на странице{" "}
-        <Link to="/partners">Партнёрам</Link> как мы можем эффективно помочь вам
-        увеличить продажи и присутствие вашего товара в северном Казахстане.
-      </Paragraph>
-    </PostWrapper>
+    <FlexibleWrapper>
+      <RightGraphic src={rightGraphic} />
+      <SectionHeading>Написать нам</SectionHeading>
+      <ContactForm />
+    </FlexibleWrapper>
+    <FlexibleWrapper>
+      <LeftGraphic src={leftGraphic} />
+      <SectionHeading>Контакты</SectionHeading>
+      <Contacts />
+    </FlexibleWrapper>
   </Layout>
 );
 
-export default NotFoundPage;
+export default ContactUsPage;

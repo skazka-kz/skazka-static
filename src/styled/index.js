@@ -168,3 +168,42 @@ export const InfoButtonLink = styled(Link)`
     padding: 1rem 2rem;
   }
 `;
+
+export const FixedImage = styled.img`
+  position: absolute;
+  z-index: -10;
+`;
+
+export const LeftGraphic = styled(FixedImage)`
+  position: absolute;
+  left: 0;
+  top: -30%;
+  width: 20%;
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
+  }
+
+  @media (max-width: 599px) {
+    top: 5%;
+  }
+`;
+
+export const RightGraphic = styled(FixedImage)`
+  position: absolute;
+  right: 0;
+  width: 20%;
+  top: -30%;
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 40%;
+  }
+`;
