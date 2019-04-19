@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import { boxShadow, orange_dark, orange_light } from "../utilities/colors";
+import {
+  boxShadow,
+  orangeGradient,
+  orange_light,
+  orange_dark,
+} from "../utilities/colors";
 import { H1 } from "../styled";
 
 const Wrapper = styled.div`
@@ -38,6 +43,28 @@ const ContentInput = styled.textarea`
   font-weight: 300;
 `;
 
+const SubmitButton = styled.button`
+  align-self: flex-end;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  background: ${orangeGradient};
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: 600px) {
+    align-self: center;
+  }
+`;
+
+const OrangeH1 = styled(H1)`
+  color: ${orange_dark};
+`;
+
 const ContactForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
@@ -54,6 +81,7 @@ const ContactForm = () => {
           rows="4"
           placeholder="Напишите нам, о чём хотите узнать..."
         />
+        <SubmitButton>Отправить</SubmitButton>
       </Form>
     </Wrapper>
   );
