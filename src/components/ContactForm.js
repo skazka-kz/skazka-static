@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 import {
   boxShadow,
@@ -7,7 +8,7 @@ import {
   orange_light,
   orange_dark,
 } from "../utilities/colors";
-import { H1 } from "../styled";
+import Spinner from "./Spinner";
 
 const Wrapper = styled.div`
   margin: 1rem;
@@ -61,26 +62,83 @@ const SubmitButton = styled.button`
   }
 `;
 
-const OrangeH1 = styled(H1)`
+const Notice = styled.span`
+  font-size: 1.25rem;
   color: ${orange_dark};
+  align-self: center;
 `;
 
 const ContactForm = () => {
-  const handleSubmit = e => {
+  const [name, setName] = useState("");
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const emailEndpoint = `https://rifq7tqdrf.execute-api.eu-central-1.amazonaws.com/prod/send-email`;
+
+  const handleSubmit = async e => {
     e.preventDefault();
+    setLoading(true);
+
+    const request = axios.post(emailEndpoint, {
+      name,
+      title,
+      content,
+      secret: "kill_all_humans",
+    });
+
+    try {
+      await request;
+      setSuccess("Ваше письмо отправлено");
+      setName("");
+      setTitle("");
+      setContent("");
+    } catch (e) {
+      setSuccess("Ошибка при отправке. Попробуйте позже");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <Wrapper>
       <Form onSubmit={handleSubmit}>
-        <PrettyInput type="text" placeholder="Ваше имя:" />
-        <PrettyInput type="email" placeholder="E-mail:" />
+        <PrettyInput
+          type="text"
+          placeholder="Ваше имя:"
+          onChange={e => {
+            setName(e.target.value);
+          }}
+          value={name}
+          minLength="3"
+          required
+        />
+        <PrettyInput
+          type="text"
+          placeholder="Тема:"
+          onChange={e => {
+            setTitle(e.target.value);
+          }}
+          value={title}
+          minLength="3"
+          required
+        />
         <ContentInput
           multiline
           rows="4"
           placeholder="Напишите нам, о чём хотите узнать..."
+          value={content}
+          onChange={e => {
+            setContent(e.target.value);
+          }}
+          minLength="3"
+          required
         />
-        <SubmitButton>Отправить</SubmitButton>
+        {success ? <Notice>{success}</Notice> : null}
+        <SubmitButton type="submit">
+          Отправить {loading ? <Spinner /> : null}
+        </SubmitButton>
       </Form>
     </Wrapper>
   );
