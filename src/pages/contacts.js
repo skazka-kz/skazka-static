@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -7,19 +6,14 @@ import ContactForm from "../components/ContactForm";
 import Contacts from "../components/ContactsSection";
 
 import {
-  ContentWrapper,
   SectionHeading,
   LeftGraphic,
   RightGraphic,
+  FlexibleWrapper,
 } from "../styled";
 
 import leftGraphic from "../images/left.svg";
 import rightGraphic from "../images/right.svg";
-
-const FlexibleWrapper = styled(ContentWrapper)`
-  width: 100%;
-  margin: 5rem 0;
-`;
 
 const ContactUsPage = () => (
   <Layout>
