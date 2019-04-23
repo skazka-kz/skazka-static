@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { black, orange_light, orangeGradient } from "../utilities/colors";
+import {
+  black,
+  orange_light,
+  orange_dark,
+  orangeGradient,
+} from "../utilities/colors";
 
 export const SiteWrapper = styled.main`
   font-family: "Ubuntu", sans-serif;
@@ -29,6 +34,7 @@ export const FlexibleWrapper = styled(ContentWrapper)`
   width: 100%;
   margin: 5rem 0;
   padding: 0;
+  ${p => (p.topMargin ? `margin-top: ${p.topMargin};` : "")}
 `;
 
 export const SectionHeading = styled.h1`
@@ -77,7 +83,7 @@ export const PostWrapper = styled.div`
 export const H1 = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 2rem 0;
+  margin: 0 0 2rem;
   text-align: center;
 
   @media (max-width: 768px) {
@@ -103,7 +109,7 @@ export const FloatingContentBox = styled.div`
   padding: 2rem;
   background-color: white;
   border-radius: 1rem;
-  margin: 0 2rem;
+  margin: 2rem 0;
 
   p {
     margin: 1.5rem;
@@ -121,8 +127,7 @@ export const FloatingContentBox = styled.div`
   }
 
   a {
-    color: ${orange_light};
-    text-decoration: none;
+    color: ${orange_dark};
     font-style: italic;
   }
 
@@ -255,4 +260,9 @@ export const CallToActionA = styled.a`
     width: 70%;
     text-align: center;
   }
+`;
+
+export const Accent = styled.span`
+  font-weight: 400;
+  font-style: italic;
 `;

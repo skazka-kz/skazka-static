@@ -24,7 +24,7 @@ const ContactUsPage = () => (
       <CallToActionA href="#call">Позвонить</CallToActionA>
       <CallToActionA href="#write">Написать</CallToActionA>
     </CtaContainer>
-    <FlexibleWrapper>
+    <FlexibleWrapper topMargin="0">
       <RightGraphic src={rightGraphic} />
       <SectionHeading id="call">Контакты</SectionHeading>
       <Contacts />
