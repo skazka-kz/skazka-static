@@ -4,7 +4,6 @@ import { black, orange_light, orangeGradient } from "../utilities/colors";
 
 export const SiteWrapper = styled.main`
   font-family: "Ubuntu", sans-serif;
-  font-display: auto;
 `;
 
 export const ContentWrapper = styled.section`
@@ -29,6 +28,7 @@ export const ContentWrapper = styled.section`
 export const FlexibleWrapper = styled(ContentWrapper)`
   width: 100%;
   margin: 5rem 0;
+  padding: 0;
 `;
 
 export const SectionHeading = styled.h1`
@@ -210,5 +210,49 @@ export const RightGraphic = styled(FixedImage)`
 
   @media (max-width: 768px) {
     width: 40%;
+  }
+`;
+
+export const CtaContainer = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+export const CallToActionLink = styled(Link)`
+  margin: 1rem;
+  padding: 1.5rem;
+  background: ${orangeGradient};
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+
+  @media (max-width: 600px) {
+    width: 70%;
+    text-align: center;
+  }
+`;
+
+export const CallToActionA = styled.a`
+  margin: 1rem;
+  padding: 1.5rem;
+  background: ${orangeGradient};
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+
+  @media (max-width: 600px) {
+    width: 70%;
+    text-align: center;
   }
 `;

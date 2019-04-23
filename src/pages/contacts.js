@@ -10,6 +10,8 @@ import {
   LeftGraphic,
   RightGraphic,
   FlexibleWrapper,
+  CtaContainer,
+  CallToActionA,
 } from "../styled";
 
 import leftGraphic from "../images/left.svg";
@@ -18,15 +20,19 @@ import rightGraphic from "../images/right.svg";
 const ContactUsPage = () => (
   <Layout>
     <SEO title="О Нас" />
+    <CtaContainer>
+      <CallToActionA href="#call">Позвонить</CallToActionA>
+      <CallToActionA href="#write">Написать</CallToActionA>
+    </CtaContainer>
     <FlexibleWrapper>
       <RightGraphic src={rightGraphic} />
-      <SectionHeading>Написать нам</SectionHeading>
-      <ContactForm />
+      <SectionHeading id="call">Контакты</SectionHeading>
+      <Contacts />
     </FlexibleWrapper>
     <FlexibleWrapper>
       <LeftGraphic src={leftGraphic} />
-      <SectionHeading>Контакты</SectionHeading>
-      <Contacts />
+      <SectionHeading id="write">Написать нам</SectionHeading>
+      <ContactForm />
     </FlexibleWrapper>
   </Layout>
 );
