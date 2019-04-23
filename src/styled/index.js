@@ -131,6 +131,24 @@ export const FloatingContentBox = styled.div`
     font-style: italic;
   }
 
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.25rem;
+    color: ${orange_dark};
+  }
+
+  ul li a {
+    margin: 0.5rem;
+  }
+
   @media (max-width: 1280px) {
     p {
       font-size: 1.2rem;
@@ -182,13 +200,13 @@ export const InfoButtonLink = styled(Link)`
 export const FixedImage = styled.img`
   position: absolute;
   z-index: -10;
+  top: -30%;
+  width: 20%;
 `;
 
 export const LeftGraphic = styled(FixedImage)`
   position: absolute;
   left: 0;
-  top: -30%;
-  width: 20%;
 
   @media (max-width: 1024px) {
     top: 0;
@@ -206,8 +224,6 @@ export const LeftGraphic = styled(FixedImage)`
 export const RightGraphic = styled(FixedImage)`
   position: absolute;
   right: 0;
-  width: 20%;
-  top: -30%;
 
   @media (max-width: 1024px) {
     top: 0;
