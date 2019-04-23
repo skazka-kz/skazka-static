@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { boxShadow, orange_dark, orange_light } from "../utilities/colors";
+import { black, boxShadow, orange_light } from "../utilities/colors";
 
 const ContactsContainer = styled.div`
   display: flex;
@@ -27,12 +27,11 @@ const ContactCard = styled.div`
   ${boxShadow};
   display: flex;
   flex-direction: column;
-  padding: 1rem 4rem;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   height: 30rem;
   justify-content: space-between;
-  padding-bottom: 5rem;
+  padding: 1rem 4rem 5rem;
 
   @media (max-width: 1440px) {
     height: 25rem;
@@ -87,11 +86,23 @@ const Phone = styled.span`
   font-size: 2.2rem;
   font-weight: 300;
   margin: 0.3rem;
+
+  a {
+    color: ${black};
+    text-decoration: none;
+  }
+
   @media (max-width: 1440px) {
     font-size: 1.8rem;
   }
   @media (max-width: 1024px) {
     font-size: 1.3rem;
+  }
+  @media (max-width: 600px) {
+    a {
+      color: ${orange_light};
+      text-decoration: underline;
+    }
   }
 `;
 
@@ -110,6 +121,7 @@ const MapLink = styled.a`
   color: ${orange_light};
   font-weight: 300;
   text-decoration: none;
+
   @media (max-width: 1440px) {
     font-size: 1.8rem;
   }
@@ -130,8 +142,12 @@ const ContactsSection = () => {
         <Name>Кокшетау</Name>
         <PhoneContainer>
           <Code>+7 (7162)</Code>
-          <Phone>25-45-45</Phone>
-          <Phone>25-67-25</Phone>
+          <Phone>
+            <a href="tel:+77162254545">25-45-45</a>
+          </Phone>
+          <Phone>
+            <a href="tel:+77162254545">25-67-25</a>
+          </Phone>
         </PhoneContainer>
 
         <Address>Ауэзова, 191 а/3</Address>
@@ -146,7 +162,9 @@ const ContactsSection = () => {
         <Name>Костанай</Name>
         <PhoneContainer>
           <Code>+7 (7142)</Code>
-          <Phone>39-24-27</Phone>
+          <Phone>
+            <a href="tel:+77142392427">39-24-27</a>
+          </Phone>
         </PhoneContainer>
 
         <Address>Карбышева, 117</Address>

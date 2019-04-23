@@ -6,12 +6,12 @@ import ContactForm from "../components/ContactForm";
 import Contacts from "../components/ContactsSection";
 
 import {
-  SectionHeading,
+  CallToActionA,
+  CtaContainer,
+  FlexibleWrapper,
   LeftGraphic,
   RightGraphic,
-  FlexibleWrapper,
-  CtaContainer,
-  CallToActionA,
+  SectionHeading,
 } from "../styled";
 
 import leftGraphic from "../images/left.svg";
