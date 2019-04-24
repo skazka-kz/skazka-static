@@ -87,7 +87,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/skazka-static/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -759,9 +759,9 @@ var sanitizeComponents = function sanitizeComponents(components) {
   }(React.Component);
 
   var routerElement = createElement(ServerLocation, {
-    url: "" + "/skazka-static" + pagePath
+    url: "" + "" + pagePath
   }, createElement(Router, {
-    baseuri: "" + "/skazka-static"
+    baseuri: "" + ""
   }, createElement(RouteHandler, {
     path: "/*"
   })));
@@ -786,7 +786,7 @@ var sanitizeComponents = function sanitizeComponents(components) {
     setPostBodyComponents: setPostBodyComponents,
     setBodyProps: setBodyProps,
     pathname: pagePath,
-    pathPrefix: "/skazka-static"
+    pathPrefix: ""
   }); // If no one stepped up, we'll handle it.
 
   if (!bodyHtml) {
@@ -866,7 +866,7 @@ var sanitizeComponents = function sanitizeComponents(components) {
     bodyHtml: bodyHtml,
     scripts: scripts,
     styles: styles,
-    pathPrefix: "/skazka-static"
+    pathPrefix: ""
   });
   scripts.slice(0).reverse().forEach(function (script) {
     // Add preload/prefetch <link>s for scripts.
@@ -874,12 +874,12 @@ var sanitizeComponents = function sanitizeComponents(components) {
       as: "script",
       rel: script.rel,
       key: script.name,
-      href: "/skazka-static" + "/" + script.name
+      href: "" + "/" + script.name
     }));
   });
 
   if (page.jsonName in dataPaths) {
-    var dataPath = "/skazka-static" + "/static/d/" + dataPaths[page.jsonName] + ".json";
+    var dataPath = "" + "/static/d/" + dataPaths[page.jsonName] + ".json";
     headComponents.push(React.createElement("link", {
       as: "fetch",
       rel: "preload",
@@ -897,11 +897,11 @@ var sanitizeComponents = function sanitizeComponents(components) {
         as: "style",
         rel: style.rel,
         key: style.name,
-        href: "/skazka-static" + "/" + style.name
+        href: "" + "/" + style.name
       }));
     } else {
       headComponents.unshift(React.createElement("style", {
-        "data-href": "/skazka-static" + "/" + style.name,
+        "data-href": "" + "/" + style.name,
         dangerouslySetInnerHTML: {
           __html: fs.readFileSync(join(process.cwd(), "public", style.name), "utf-8")
         }
@@ -931,7 +931,7 @@ var sanitizeComponents = function sanitizeComponents(components) {
   var bodyScripts = scripts.filter(function (s) {
     return s.rel !== "prefetch";
   }).map(function (s) {
-    var scriptPath = "/skazka-static" + "/" + JSON.stringify(s.name).slice(1, -1);
+    var scriptPath = "" + "/" + JSON.stringify(s.name).slice(1, -1);
     return React.createElement("script", {
       key: scriptPath,
       src: scriptPath,
@@ -949,7 +949,7 @@ var sanitizeComponents = function sanitizeComponents(components) {
     getPostBodyComponents: getPostBodyComponents,
     replacePostBodyComponents: replacePostBodyComponents,
     pathname: pagePath,
-    pathPrefix: "/skazka-static"
+    pathPrefix: ""
   });
   var html = "<!DOCTYPE html>" + renderToStaticMarkup(React.createElement(Html, Object.assign({}, bodyProps, {
     headComponents: headComponents,
@@ -3709,7 +3709,7 @@ exports.parsePath = _parsePath.parsePath;
 
 /*global __PATH_PREFIX__ */
 function withPrefix(path) {
-  return normalizePath("/skazka-static" + "/" + path);
+  return normalizePath("" + "/" + path);
 }
 
 function normalizePath(path) {
