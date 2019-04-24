@@ -87,7 +87,7 @@ const NotFoundPage = () => (
         </Paragraph>
         <ul>
           {documents.map(d => (
-            <li key={d.path}>
+            <li key={d.name}>
               <a href={d.path} target="_blank">
                 {d.name}
               </a>

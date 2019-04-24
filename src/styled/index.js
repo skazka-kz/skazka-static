@@ -143,6 +143,7 @@ export const FloatingContentBox = styled.div`
     font-weight: 400;
     margin: 0.25rem;
     color: ${orange_dark};
+    text-align: center;
   }
 
   ul li a {
@@ -163,6 +164,11 @@ export const FloatingContentBox = styled.div`
 
   @media (max-width: 599px) {
     padding: 0.5rem;
+    margin: 2rem 1rem;
+
+    ul li {
+      font-size: 1.2rem;
+    }
   }
 `;
 

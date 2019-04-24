@@ -4,7 +4,6 @@ module.exports = {
     description: `Сказка - оптовый дистрибьютор в городах Кокшетау, Петропавл, Костанай и областях. Мы специализируемся в кондитерских изделиях лучших производителей Казахстана, России и Украины.`,
     author: `@slavabez`,
   },
-  pathPrefix: "skazka-static",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -23,6 +22,12 @@ module.exports = {
       options: {
         path: `${__dirname}/posts`,
         name: `posts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-138945667-1`,
       },
     },
   ],
