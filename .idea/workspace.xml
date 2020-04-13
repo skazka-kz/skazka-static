@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4cb1770-a57d-4354-aab3-6c85f8926b20" name="Default Changelist" comment="More content and styling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="a4cb1770-a57d-4354-aab3-6c85f8926b20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/CNAME" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555994732977</updated>
-      <workItem from="1586749864848" duration="4067000" />
+      <workItem from="1586749864848" duration="5389000" />
     </task>
     <task id="LOCAL-00001" summary="Changing the layout of the contacts page">
       <created>1556003355114</created>
@@ -105,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556018546985</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added email field to the contact form">
+      <created>1586760021198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586760021198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +122,22 @@
     <MESSAGE value="Added webstorm files" />
     <MESSAGE value="More content for pages, some SEO things and small styling fixes" />
     <MESSAGE value="More content and styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="More content and styling" />
+    <MESSAGE value="Added email field to the contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added email field to the contact form" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="707" y="339" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586761236261">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="707" y="339" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1586761236261" />
+    <state x="559" y="86" key="CommitChangelistDialog2" timestamp="1586760021095">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="559" y="86" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1586760021095" />
+    <state x="560" y="273" key="Vcs.Push.Dialog.v2" timestamp="1586760023423">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="560" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1586760023423" />
   </component>
   <component name="masterDetails">
     <states>
