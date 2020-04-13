@@ -81,13 +81,14 @@ const Notice = styled.span`
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
+  const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const emailEndpoint = `https://rifq7tqdrf.execute-api.eu-central-1.amazonaws.com/prod/send-email`;
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
@@ -95,6 +96,7 @@ const ContactForm = () => {
       name,
       title,
       content,
+      email,
       secret: "kill_all_humans",
     });
 
@@ -103,6 +105,7 @@ const ContactForm = () => {
       setSuccess("Ваше письмо отправлено");
       setName("");
       setTitle("");
+      setEmail("");
       setContent("");
     } catch (e) {
       setSuccess("Ошибка при отправке. Попробуйте позже");
@@ -117,7 +120,7 @@ const ContactForm = () => {
         <PrettyInput
           type="text"
           placeholder="Ваше имя:"
-          onChange={e => {
+          onChange={(e) => {
             setName(e.target.value);
           }}
           value={name}
@@ -125,9 +128,18 @@ const ContactForm = () => {
           required
         />
         <PrettyInput
+          type="email"
+          placeholder="Ваш электронный адрес"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          required
+        />
+        <PrettyInput
           type="text"
           placeholder="Тема:"
-          onChange={e => {
+          onChange={(e) => {
             setTitle(e.target.value);
           }}
           value={title}
@@ -139,7 +151,7 @@ const ContactForm = () => {
           rows="4"
           placeholder="Напишите нам, о чём хотите узнать..."
           value={content}
-          onChange={e => {
+          onChange={(e) => {
             setContent(e.target.value);
           }}
           minLength="3"
