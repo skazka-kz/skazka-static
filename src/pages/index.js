@@ -108,7 +108,7 @@ const IndexPage = () => (
       <LeftGraphic src={leftGraphic} alt="Decorative graphic" />
       <SectionHeading>Наши Партнёры:</SectionHeading>
       <CardsContainer>
-        {logos.map(p => (
+        {logos.map((p) => (
           <PartnerCard key={p.alt}>
             <img src={p.src} alt={p.alt} />
           </PartnerCard>
