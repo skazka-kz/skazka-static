@@ -17,7 +17,7 @@ import {
 
 import rightGraphic from "../images/right.svg";
 
-const NotFoundPage = () => (
+const PartnersPage = () => (
   <Layout>
     <SEO title="О Нас" />
     <FlexibleWrapper>
@@ -61,4 +61,4 @@ const NotFoundPage = () => (
   </Layout>
 );
 
-export default NotFoundPage;
+export default PartnersPage;

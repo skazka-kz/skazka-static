@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-import { black, orange_light, orangeGradient } from "../utilities/colors";
+import { black, orange_light } from "../utilities/colors";
 import { InfoButtonLink } from "../styled";
 
 import CookieGraphic from "../images/top_right.svg";

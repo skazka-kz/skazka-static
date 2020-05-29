@@ -34,7 +34,7 @@ export const FlexibleWrapper = styled(ContentWrapper)`
   width: 100%;
   margin: 5rem 0;
   padding: 0;
-  ${p => (p.topMargin ? `margin-top: ${p.topMargin};` : "")}
+  ${(p) => (p.topMargin ? `margin-top: ${p.topMargin};` : "")}
 `;
 
 export const SectionHeading = styled.h1`
@@ -97,18 +97,33 @@ export const H1 = styled.h1`
   }
 `;
 
+export const H2 = styled.h1`
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+  text-align: center;
+  color: #262626;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.45rem;
+    margin: 1.2rem 0;
+  }
+`;
+
 export const Paragraph = styled.p`
   font-size: 1rem;
   margin: 0.5rem;
   text-align: center;
 `;
 
-export const FloatingContentBox = styled.div`
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+export const ContentBox = styled.div`
   max-width: 800px;
   padding: 2rem;
-  background-color: white;
-  border-radius: 1rem;
   margin: 2rem 0;
 
   p {
@@ -170,6 +185,12 @@ export const FloatingContentBox = styled.div`
       font-size: 1.2rem;
     }
   }
+`;
+
+export const FloatingContentBox = styled(ContentBox)`
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: white;
 `;
 
 export const InfoButtonLink = styled(Link)`
