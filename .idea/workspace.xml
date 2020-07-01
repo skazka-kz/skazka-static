@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4cb1770-a57d-4354-aab3-6c85f8926b20" name="Default Changelist" comment="Updated info, added coverage, added the new catalogue">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="a4cb1770-a57d-4354-aab3-6c85f8926b20" name="Default Changelist" comment="Small package json update">
+      <change afterPath="$PROJECT_DIR$/static/skazka_katalog_main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,11 @@
       <updated>1555994732977</updated>
       <workItem from="1586749864848" duration="5748000" />
       <workItem from="1590763957025" duration="3039000" />
-      <workItem from="1590767006277" duration="1676000" />
+      <workItem from="1590767006277" duration="3204000" />
+      <workItem from="1591081828746" duration="400000" />
+      <workItem from="1591082238694" duration="1943000" />
+      <workItem from="1591157251730" duration="386000" />
+      <workItem from="1593602444482" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="Changing the layout of the contacts page">
       <created>1556003355114</created>
@@ -143,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590767810667</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Small package json update">
+      <created>1590768857667</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590768857667</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +184,8 @@
     <MESSAGE value="Added email field to the contact form" />
     <MESSAGE value="Added cname to fix domain breaking" />
     <MESSAGE value="Updated info, added coverage, added the new catalogue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated info, added coverage, added the new catalogue" />
+    <MESSAGE value="Small package json update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small package json update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="339" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586761236261">
@@ -186,19 +200,24 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="273" y="-10" width="1354" height="1090" key="FileDocumentManager.FileCacheConflict/0.27.1920.1053@0.27.1920.1053" timestamp="1590764227388" />
-    <state x="560" y="228" width="800" height="609" key="Vcs.Push.Dialog.v2" timestamp="1590768572631">
+    <state x="560" y="191" width="800" height="646" key="Vcs.Push.Dialog.v2" timestamp="1590768860804">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="560" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1586761288027" />
-    <state x="560" y="228" width="800" height="609" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590768572631" />
+    <state x="560" y="191" width="800" height="646" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1590768860804" />
+    <state x="755" y="954" width="402" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591082276864">
+      <screen x="0" y="27" width="3840" height="2133" />
+    </state>
+    <state x="755" y="954" width="402" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.3840.2133@0.27.3840.2133" timestamp="1591082276864" />
     <state x="744" y="400" width="422" height="239" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1590768634080">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="744" y="400" width="422" height="239" key="git4idea.remote.GitConfigureRemotesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1590768634080" />
-    <state x="623" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1590768614365">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="1246" y="444" width="1344" height="1374" key="search.everywhere.popup" timestamp="1591157632056">
+      <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="623" y="233" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1590768614365" />
+    <state x="1246" y="444" width="1344" height="1374" key="search.everywhere.popup/0.27.3840.2133@0.27.3840.2133" timestamp="1591157632056" />
   </component>
   <component name="masterDetails">
     <states>

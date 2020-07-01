@@ -22,6 +22,10 @@ const documents = [
     name: "Топ ассортимент (pdf)",
     path: catalog,
   },
+  {
+    name: "Расширенный ассортимент (pdf)",
+    path: catalog,
+  },
 ];
 
 const NotFoundPage = () => (
