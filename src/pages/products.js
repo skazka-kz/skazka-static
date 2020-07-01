@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import catalog from "../../static/skazka_katalog_lite.pdf";
-import catalogFull from "../../static/skazka_katalog_lite.pdf";
+import catalogFull from "../../static/skazka_katalog_main.pdf";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
